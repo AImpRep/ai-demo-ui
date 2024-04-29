@@ -8,10 +8,11 @@ const ENDPOINT = {
   DESCRIBE: "describe",
   ASSIST: "assist",
   HELP: "help",
+  SEND_MESS: "send"
 };
 
 // CSS URI
-const css_uri = "/poc.css";
+const css_uri = "/portaleAcquiring/poc.css";
 
 // minimum image size
 const image_size = 60;
@@ -57,6 +58,8 @@ function request(url, data, success, error, no_loader) {
  * @param {JSON} error - JSON obj error response from BE
  */
 function handleError(error) {
+  add_message_to_chat("Non è stato possibile procedere con l'operazione. Riprova!", "ia");
+  disabledSectionInput(false);
   console.log(`handling error: ${error}`);
 }
 
@@ -204,6 +207,75 @@ function createDownloadLink(blob) {
   downloadLink[0].click(); // Simulate click to trigger download
   URL.revokeObjectURL(url); // Release the object URL
   downloadLink.remove(); // Remove the anchor element
+}
+
+
+/**
+ * SEND_MESS AI Helper
+ *
+ * @param {event} e - (optional) click event
+ * @param {string} type - text to send
+ */
+function sendMessage(e, content) {
+  stop_event_propagation(e);
+
+  // strip message
+  content = content.replace(/(<([^>]+)>)/gi, "").trim();
+  if (content) {
+    // add stripped msg to chat and clean input box
+    add_message_to_chat(content, "user");
+    $("#AIhelperChat-input").val("");
+
+    //messaggio in attesa della risposta
+    setTimeout(() => {
+      add_message_to_chat("Sto elaborando una risposta...", "ia");
+    }, 300);
+   
+    // send to BE
+    //toggle_thinking_message();
+    console.log("MESSAGGIO", content);
+    console.log("CHAT", chats, current_chat_id);
+    console.log("uris", attachaments, current_chat_id);
+
+    //disabilito la sezione di invio
+    disabledSectionInput(true);
+
+    request(
+      ENDPOINT["BASE"],
+      {
+        action: ENDPOINT["SEND_MESS"],
+        params: {
+          message: content
+        }
+      },
+      (res) => {
+        console.log("SONO QUI", res)
+        if (res.response) {
+          chats[current_chat_id].thread_id = res.threadId;
+          var redirect = `https://buonielibretti.poste.it/risparmiare-con-i-buoni.html?sab=${res.response}#valore`;
+          window.open(redirect, "_blank");
+          disabledSectionInput(false);
+          //add_message_to_chat(res.response);
+        } else {
+          
+          console.log("SONO QUI ERROR", res)
+          handleError(res);
+        }
+      },
+      handleError,
+      true
+    );
+  }
+}
+
+/**
+ * 
+ * @param {boolean} disabled - disabilta(true) o abilita(false) la sezione di input
+ */
+function disabledSectionInput(disabled){
+  $("#AIhelperChat-input").prop("disabled", disabled);
+  $("#AIhelperChat-inputbtn").prop("disabled", disabled);
+  $("#AIhelperChat-audiobtn").prop("disabled", disabled);
 }
 
 /**
@@ -694,7 +766,7 @@ function add_AI_helper_UI_help_chat() {
     type: "submit",
     id: "AIhelperChat-inputbtn",
     click: function (e) {
-      help(e, $("#AIhelperChat-input").val());
+      sendMessage(e, $("#AIhelperChat-input").val());
     },
   })
     .text("Invia")
