@@ -11,7 +11,7 @@ const ENDPOINT = {
 };
 
 // CSS URI
-const css_uri = "/portaleAcquiring/poc.css";
+const css_uri = "/poc.css";
 
 // minimum image size
 const image_size = 60;
