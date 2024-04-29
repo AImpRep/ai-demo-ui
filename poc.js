@@ -11,7 +11,7 @@ const ENDPOINT = {
 };
 
 // CSS URI
-const css_uri = "/poc.css";
+const css_uri = "/portaleAcquiring/poc.css";
 
 // minimum image size
 const image_size = 60;
@@ -23,6 +23,9 @@ let assists = [];
 let attachaments = [];
 let chats = [];
 let current_chat_id = 0;
+let mediaRecorder;
+let chunks = [];
+let rec = false;
 
 // ------------------------------------------------------------------------- //
 // AI HELPER LOGIC
@@ -134,6 +137,73 @@ function assist(e, type) {
       handleError
     );
   }
+}
+
+/**
+ * avvia registrazione
+*/
+async function startRecording() {
+  let stream = null;
+  //$("#AIhelperChat-audiobtn").addClass("in-rec");
+  
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    mediaRecorder = new MediaRecorder(stream);
+    add_message_to_chat("Ti sto ascoltando...", 'ia')
+    mediaRecorder.addEventListener('dataavailable', function(event) {
+      chunks.push(event.data);
+    });
+    mediaRecorder.addEventListener('stop', function() {
+      let recordedBlob = new Blob(chunks, {type: 'audio/mp3'});
+      //createDownloadLink(recordedBlob)
+      inviaRegistrazione(recordedBlob, true);
+      chunks = [];
+    });
+    rec = true;
+    mediaRecorder.start();
+  } catch (err) {
+    if(err.name === "NotAllowedError"){
+      //alert("Abilita i permessi di accesso al microfono");
+      add_message_to_chat("Non posso ascoltare ciò che mi chiedi. Permettimi di utilizzare il microfono e sarò lieta di aiutarti!", 'ia');
+    }
+  }
+}
+
+/**
+ * interrompi registrazione
+*/
+function stopRecording() {
+  if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+    rec = false;
+    //$("#AIhelperChat-audiobtn").removeClass("in-rec");
+    add_message_to_chat("Elaboro la richiesta!", 'ia')
+    mediaRecorder.stop();
+  } else {
+    console.error('MediaRecorder not initialized or already stopped.');
+  }
+}
+
+/**
+ * 
+ * @param {*} richiesta - testo o audio  
+ * @param {boolean} audio - true se stiamo inviando audio
+ */
+function inviaRegistrazione(richiesta, audio=false){
+  //inviare audio/testo al BE, aggiungere alla chat la risposta
+  if(audio){
+    richiesta = URL.createObjectURL(richiesta);
+  }
+  
+}
+
+function createDownloadLink(blob) {
+  const url = URL.createObjectURL(blob);
+  const downloadLink = $('<a style="display: none;" download="recording.mp3">Download Recording</a>');
+  downloadLink.attr('href', url);
+  $('body').append(downloadLink);
+  downloadLink[0].click(); // Simulate click to trigger download
+  URL.revokeObjectURL(url); // Release the object URL
+  downloadLink.remove(); // Remove the anchor element
 }
 
 /**
@@ -325,7 +395,7 @@ function add_AI_helper_UI_btn() {
       $("<a>", {
         href: "#",
         class: "btn btn-expand",
-        click: toggle_helper,
+        click: toggle_chat,
       }).appendTo(
         $("<div>", {
           id: "AIhelperBtn",
@@ -634,6 +704,27 @@ function add_AI_helper_UI_help_chat() {
       }).appendTo(input)
     );
 
+  // audio button
+  $("<button></button>", {
+    class:
+      "btn btn-primary btn-cta spacer-xs-bottom-0",
+    type: "submit",
+    id: "AIhelperChat-audiobtn",
+    click: function (e) {
+      if(!rec){
+        startRecording();
+      }else{
+        stopRecording();
+      }
+    },
+  })
+    .text("Registra")
+    .appendTo(
+      $("<div></div>", {
+        class: "input-group-btn",
+      }).appendTo(input)
+    );    
+
   // loading area
   $("<img></img>", {
     src: "/risorse_dt/condivise/immagini/generiche/spinner_grigio.gif",
@@ -653,7 +744,10 @@ function add_AI_helper_UI_help_chat() {
  * @param {string} type - (optional) user message or others
  */
 function add_message_to_chat(text, type) {
-  if (chats && chats[current_chat_id]) {
+  if (chats /* && chats[current_chat_id]*/) {
+    if(!chats[current_chat_id]){
+      chats[current_chat_id] = { chat: [], thread_id: null };
+    }
     chats[current_chat_id].chat.push({ text, type });
     refresh_chat();
   }
@@ -694,7 +788,7 @@ function toggle_loader() {
  */
 function toggle_helper(e) {
   stop_event_propagation(e);
-  if ($("#AIhelperScreen-wrapper").toggle().is(":visible")) {
+  if ($("#AIhelperChat-wrapper").toggle().is(":visible")) {
     $(document.body).css("overflow", "hidden");
   } else {
     $(document.body).css("overflow", "auto");
@@ -708,6 +802,12 @@ function toggle_helper(e) {
  */
 function toggle_chat(e) {
   stop_event_propagation(e);
+  if(chats.length === 0){
+    add_message_to_chat("Ciao, come posso aiutarti?", 'ia')
+    //chats[current_chat_id] = { chat: [], thread_id: null };
+    //chats[current_chat_id].chat.push({ text: "Ciao, come posso aiutarti?", type:'ia' });
+    //refresh_chat();
+  }
   if ($("#AIhelperChat-wrapper").toggle().is(":visible")) {
     refresh_chat();
     $(document.body).css("overflow", "hidden");
