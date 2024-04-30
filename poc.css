@@ -5,7 +5,7 @@
     left: 20px;
     width: 150px;
     height: 50px;
-    z-index: 100;
+    z-index: -100;
     text-decoration: none;
     color: #fff;
     background-color: #0047bb;
@@ -60,7 +60,7 @@
 
 #AIhelperScreen-actions a {
     background-repeat: no-repeat;
-    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-list-view.png);
+    background-image: url(./risorse_dt/condivise/immagini/icone/icone-default-on/ico-list-view.png);
     background-size: 24px;
     background-position: center;
     background-color: transparent;
@@ -73,15 +73,15 @@
 }
 
 #AIhelperScreen-actions .impaired a {
-    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-visualizza.png);
+    background-image: url(./risorse_dt/condivise/immagini/icone/icone-default-on/ico-visualizza.png);
 }
 
 #AIhelperScreen-actions .colorblind a {
-    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-sinistro.png);
+    background-image: url(./risorse_dt/condivise/immagini/icone/icone-default-on/ico-sinistro.png);
 }
 
 #AIhelperScreen-actions .deficit a {
-    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-monitoraggio.png);
+    background-image: url(./risorse_dt/condivise/immagini/icone/icone-default-on/ico-monitoraggio.png);
 }
 
 #AIhelperChat-area {
@@ -91,7 +91,7 @@
     margin: 0;
     position: fixed;
     top: 10%;
-    left: 25%;
+    left: 10%;
     width: 50%;
     height: 80%;
 }
@@ -114,8 +114,18 @@
 }
 
 #AIhelperChat-box div.user {
+    /*margin: 10px auto 5px 0%;
+        border-bottom-left-radius: 4px;
+    */
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+#AIhelperChat-box div.ia {
     margin: 10px auto 5px 0%;
     border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 15px;
 }
 
 #AIhelperChat-thinking {
@@ -160,4 +170,8 @@
     -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.65);
     -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.65);
     box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.65);
+}
+
+.in-rec {
+    background-color: rgb(242, 177, 63) !important;
 }
