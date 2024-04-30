@@ -4,7 +4,7 @@
 
 // BE ENDPOINT (and actions)
 const ENDPOINT = {
-  BASE: "/api/generate-content",
+  BASE: "/api/generate-content/",
   DESCRIBE: "describe",
   ASSIST: "assist",
   HELP: "help",
@@ -233,10 +233,6 @@ function sendMessage(e, content) {
    
     // send to BE
     //toggle_thinking_message();
-    console.log("MESSAGGIO", content);
-    console.log("CHAT", chats, current_chat_id);
-    console.log("uris", attachaments, current_chat_id);
-
     //disabilito la sezione di invio
     disabledSectionInput(true);
 
@@ -249,16 +245,13 @@ function sendMessage(e, content) {
         }
       },
       (res) => {
-        console.log("SONO QUI", res)
         if (res.response) {
-          chats[current_chat_id].thread_id = res.threadId;
+          //chats[current_chat_id].thread_id = res.threadId;
           var redirect = `https://buonielibretti.poste.it/risparmiare-con-i-buoni.html?sab=${res.response}#valore`;
           window.open(redirect, "_blank");
           disabledSectionInput(false);
           //add_message_to_chat(res.response);
         } else {
-          
-          console.log("SONO QUI ERROR", res)
           handleError(res);
         }
       },
