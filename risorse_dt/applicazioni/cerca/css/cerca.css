@@ -1,0 +1,804 @@
+/**************************************************************
+
+    Foglio stile Cerca - (c) Poste Italiane 2016/2017/2018 - GD//FS//DU
+
+***************************************************************/
+
+
+/***************************/
+
+
+/******* Tab Risultati  *******/
+
+
+/***************************/
+
+.type-result {
+    margin: 30px 0 0 0;
+}
+
+.type-result ul {
+    margin: 0;
+}
+
+.type-result ul li {
+    margin: 0;
+    padding-left: 0;
+}
+
+.type-result ul li {
+    margin-right: 55px;
+    text-transform: uppercase;
+}
+
+.type-result ul li a {
+    border-bottom: 3px solid transparent;
+    color: #222427;
+    display: block;
+    min-height: 50px;
+    font-weight: bold;
+}
+
+.type-result ul li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #0047bb;
+    color: #0047bb;
+}
+
+.type-result ul li a.active {
+    border-bottom: 3px solid #0047bb;
+    color: #0047bb;
+}
+
+.counter {
+    background-color: #ececec;
+    border-radius: 30px;
+    color: #787878;
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    padding: 2px 10px;
+}
+
+
+/***************************/
+
+
+/******* Filtri Cerca nel Sito *******/
+
+
+/***************************/
+
+.box-search-filter .panel-group-accordion .panel {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.box-search-filter #headingOne {
+    border-top: 1px solid #d0d0d0;
+}
+
+.box-search-filter .panel-heading {
+    padding: 10px 0;
+}
+
+.box-search-filter .panel {
+    background: inherit;
+}
+
+.box-search-filter .panel-body {
+    padding: 0;
+}
+
+.box-search-filter .radio-inline {
+    display: block
+}
+
+.filter-result {
+    position: absolute;
+    right: 12%;
+    font-weight: 600;
+}
+
+.accordion .filter-result {
+    right: 16%;
+}
+
+.box-search-filter {
+    position: relative;
+}
+
+.box-content-filter {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.box-search-filter .box-content-filter:first-child {
+    border-top: 1px solid #d0d0d0;
+}
+
+.box-search-filter div.filter-title {
+    padding: 10px 0;
+}
+
+.box-search-filter div.filter-title a {
+    text-transform: uppercase;
+    color: #222427
+}
+
+.box-search-filter div.filter-title a.collapsed {
+    background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-down.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 14px 9px;
+    display: block;
+}
+
+.box-search-filter div.filter-title a {
+    background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-up.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 14px 9px;
+    display: block;
+}
+
+
+/***************************/
+
+
+/******* Filtri Cerca Uffici Postali *******/
+
+
+/***************************/
+
+.cerca-up {
+    position: relative;
+}
+
+.irs-with-grid .irs-grid {
+    display: none;
+}
+
+.cerca-up .checkbox ul {
+    padding: 10px 0 0 15px;
+}
+
+.cerca-up .checkbox ul li {
+    list-style: none;
+    margin: 3px 0;
+}
+
+.cerca-up .custom-checkbox {
+    position: absolute;
+    padding-left: 10px;
+}
+
+.cerca-up .checkbox {
+    padding: 10px;
+}
+
+.cerca-up .radio-inline {
+    padding-left: 20px;
+}
+
+
+/***************************/
+
+
+/******* Risultati Cerca nel Sito *******/
+
+
+/***************************/
+
+.search-result {
+    margin-bottom: 40px;
+}
+
+.search-result h4 {
+    font-size: 24px;
+    color: #787878;
+    font-weight: normal;
+}
+
+.search-result span {
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.title-box-product-search-result,
+.title-box-service-search-result,
+.title-box-documents-search-result,
+.title-box-questions-search-result {
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 20px;
+}
+
+.title-box-product-search-result h5,
+.title-box-service-search-result h5,
+.title-box-documents-search-result h5,
+.title-box-questions-search-result h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.title-box-product-search-result h5 span,
+.title-box-service-search-result h5 span,
+.title-box-documents-search-result h5 span,
+.title-box-questions-search-result h5 span {
+    color: #787878;
+    font-weight: normal;
+}
+
+.content-search-result .list-services,
+.content-search-result .list-documents,
+.content-search-result .list-questions {
+    margin: 0;
+    padding: 0;
+}
+
+.content-search-result .list-services ul,
+.content-search-result .list-documents ul,
+.content-search-result .list-questions ul {
+    margin: 0;
+    padding: 0;
+}
+
+.content-search-result .list-services li,
+.content-search-result .list-documents li,
+.content-search-result .list-questions li {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding-bottom: 0px;
+}
+
+.content-search-result .list-documents a {
+    display: block;
+}
+
+.content-search-result .list-services a {
+    font-weight: 600;
+}
+
+.content-search-result .panel-title a {
+    display: block;
+}
+
+.affluence span.on {
+    border-radius: 10px;
+    background-color: #000;
+}
+
+
+/***************************/
+
+
+/******* Risultati Cerca Documenti *******/
+
+
+/***************************/
+
+.content-box-documents-search-result li {
+    margin-bottom: 20px;
+}
+
+
+/***************************/
+
+
+/******* Risultati Cerca Uffici Postali *******/
+
+
+/***************************/
+
+.box-status-info-details {
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.box-status-info-details .open {
+    float: left;
+    color: #53BE79;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box-status-info-details .affluence {
+    float: right;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.panel-detailed-cards-up .panel-link-mt span {
+    background-image: none;
+    background-color: #ececec;
+    background-repeat: no-repeat;
+    border-radius: 15px 0 0 15px;
+    color: #222427;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    outline: medium none;
+    padding: 3px 10px 3px 15px;
+}
+
+.panel-detailed-cards-up .panel-link-mt {
+    top: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.panel-detailed-cards-up ul {
+    margin: 0;
+    padding: 0;
+}
+
+.panel-detailed-cards-up ul li {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+.box-status-info-details,
+.box-plus-info-details,
+.box-up-info-details {
+    margin-bottom: 15px
+}
+
+.box-up-info-details ul li {
+    margin-bottom: 3px;
+}
+
+.box-plus-info-details ul li {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.panel-detailed-cards-up {
+    border: 1px solid #ececec;
+    position: relative;
+}
+
+.panel-detailed-cards-up .panel-wrap {
+    padding: 20px 20px 60px 20px;
+}
+
+.panel-detailed-cards-up .panel-body {
+    padding: 0;
+}
+
+.panel-detailed-cards-up h4 {
+    margin: 15px 0 10px 0 !important;
+    color: #4a4a4a;
+}
+
+
+/***************************/
+
+
+/******* Risultati Cerca CAP *******/
+
+
+/***************************/
+
+th.cap {
+    width: 30%;
+}
+
+.search-alphabetic-filter-toolbar {
+    margin: 0 auto;
+}
+
+.search-alphabetic-filter-toolbar .btn-sm,
+.btn-group-sm > .btn {
+    font-size: 15px;
+}
+
+
+/***************************/
+
+
+/******* Traccia Spedizione *******/
+
+
+/***************************/
+
+.content-search-delivery-result #accordion .panel-title a.collapsed {
+    background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-up.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 14px 9px;
+    padding: 0 18px 0 0;
+}
+
+.content-search-delivery-result #accordion .panel-title a {
+    background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-down.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 14px 9px;
+    padding: 0 18px 0 0;
+}
+
+.content-search-delivery-result #accordion .list-appointment .panel-default > .panel-heading {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.content-search-delivery-result #accordion .list-appointment #accordion {
+    border-top: 2px solid #ebebeb;
+    margin: 20px 0;
+}
+
+.content-search-delivery-result #accordion .panel-default {
+    border-top: 0;
+    border-bottom: 2px solid #ebebeb;
+    border-left: 0;
+    border-right: 0;
+}
+
+.content-search-delivery-result #accordion .panel-body {
+    padding: 0;
+}
+
+.content-search-delivery-result #accordion .panel-group .panel + .panel {
+    margin: 0;
+}
+
+.content-search-delivery-result #accordion .panel-default > .panel-heading {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.content-search-delivery-result #accordion .panel-default h4.panel-title a {
+    display: block;
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    color: #787878;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.box-delivery-details {
+    margin: 20px 0 15px 0;
+}
+
+.box-delivery-details h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 7px 0;
+}
+
+.box-delivery-details h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.table-responsive {
+    display: block;
+}
+
+.wrapper-delivery-details {
+    padding: 0 0 15px 0;
+}
+
+.wrapper-delivery-details ol li {
+    text-align: left;
+}
+
+.wrapper-delivery-details:last-child {
+    border-bottom: 0;
+}
+
+.wrapper-delivery-details {
+    border-bottom: 2px solid #ebebeb;
+}
+
+
+/*.wrapper-delivery-details .steps > li {
+    background-image: url("/risorse_dt/condivise/immagini/generiche/line-bg.png");
+    background-position: center bottom 36px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 0;
+    padding-right: 0;
+    width: 25%;
+}
+
+.wrapper-delivery-details .steps > li .step-content span.step-desc {
+    padding: 0;
+}
+
+.wrapper-delivery-details .steps > li .step-content span.step-number {
+    margin: 0 25%;
+}
+*/
+
+
+/*.steps > li.passed .step-content span.step-number {
+    background-image: url("/risorse_dt/condivise/immagini/generiche/list-step.png");
+    background-size: 24px:
+}
+*/
+
+
+/*.steps > li.passed .step-content span.step-desc {
+    color: #d0d0d0
+}
+*/
+
+.steps > li.not-delivered .step-content span.step-number {
+    background-image: url("/risorse_dt/condivise/immagini/icone/ico-pallino-rosso.png");
+    background-position: 0 3px;
+    background-size: 24px;
+}
+
+.steps > li.not-delivered .step-content span.step-desc {
+    color: #ff3636;
+}
+
+.steps > li.delivered .step-content span.step-number {
+    background-image: url("/risorse_dt/condivise/immagini/icone/ico-pallino-verde.png");
+    background-position: 0 3px;
+    background-size: 24px;
+}
+
+.steps > li.delivered .step-content span.step-desc {
+    color: #26b158;
+}
+
+.step-content {
+    background-color: #fff;
+}
+
+.wrapper-delivery-details .link-delivery-details a,
+.show-other a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0 25px 0px 0;
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue/ico-piu-blu.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+
+/***************************/
+
+
+/******* Finestre Modali *******/
+
+
+/***************************/
+
+.content-search-result .modal-dialog .modal-header .panel-heading h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content-search-result .modal-dialog .modal-header {
+    padding-bottom: 0;
+}
+
+.content-search-result .modal-dialog .modal-header .panel-heading {
+    padding: 0;
+    min-height: inherit;
+}
+
+.content-search-result .modal-dialog .modal-header .panel-heading .modal-body {
+    padding: 0 15px 15px 15px;
+}
+
+.content-search-result .modal-dialog .modal-header {
+    background-color: #fff;
+    border: none;
+}
+
+.content-search-result .tab-content {
+    padding: 30px 0 0 0;
+}
+
+.content-search-result .modal-dialog .box-plus-info-details {
+    margin: 25px 0 15px 0;
+    text-transform: uppercase;
+}
+
+.content-search-result .modal-dialog .box-plus-info-details li {
+    margin: 0 15px 0 0;
+    text-transform: uppercase;
+}
+
+.content-search-result .modal-dialog .box-plus-info-details li img {
+    margin: 0 7px 0 0;
+    float: left;
+}
+
+.content-search-result .modal-dialog .box-plus-info-details li span {
+    display: block;
+    float: left;
+    line-height: 1.1;
+}
+
+.content-search-result .modal-dialog .nav-tabs > li > a {
+    border: none;
+    margin-right: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content-search-result .modal-dialog h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.box-up-other-info-details ul li {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.content-search-result .modal-dialog .type-result ul li a.active {
+    border-bottom: 3px solid #0047bb;
+    color: #0047bb;
+}
+
+.content-search-result .modal-dialog .type-result ul li a:hover {
+    background: none;
+    border-bottom: 3px solid #0047bb;
+}
+
+.content-search-result .modal-dialog .type-result ul.nav-tabs {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+
+/***************************/
+
+
+/******* Ricerche Correlate *******/
+
+
+/***************************/
+
+.box-search-correlated h4 {
+    margin-bottom: 15px;
+}
+
+.box-search-correlated ul li {
+    margin-bottom: 15px;
+}
+
+
+/***************************/
+
+
+/******* Varie *******/
+
+
+/***************************/
+
+.content-search label.h3 {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.navigation-submenu {
+    display: none !important;
+}
+
+.content-applicative-search {
+    padding: 70px 0 0 0;
+}
+
+.btn-shipping {
+    height: 22px;
+    width: 22px;
+    background-image: url(/risorse_dt/condivise/immagini/generiche/informazioni.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 22px;
+    background-color: transparent;
+    border: none;
+}
+
+.number-expedition {
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content-applfunction-print {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cerca-up-map {
+    background-color: #fff;
+    height: 500px;
+}
+
+.box-map-info-details {
+    margin: 25px 0 25px 0;
+    text-transform: uppercase;
+}
+
+.box-map-info-details ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box-map-info-details ul li {
+    list-style: none;
+}
+
+.box-map-info-details li {
+    float: left;
+    margin: 0 15px 0 0;
+    text-transform: uppercase;
+}
+
+.box-map-info-details div div {
+    font-size: 15px;
+}
+
+.box-map-info-details li span {
+    display: block;
+    float: left;
+    line-height: 1.1;
+}
+
+
+/*xs*/
+
+@media (max-width: 767px) {
+    .wrapper-delivery-details .steps > li {
+        background: none;
+    }
+}
+
+
+/*md*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .box-status-info-details .affluence {
+        float: left;
+        margin-top: 3px;
+    }
+}
+
+
+/* High res Display  */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .box-search-filter div.filter-title a.collapsed,
+    .content-search-delivery-result #accordion .panel-title a {
+        background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-down@2x.png);
+    }
+    .box-search-filter div.filter-title a,
+    .content-search-delivery-result #accordion .panel-title a.collapsed {
+        background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-up@2x.png);
+    }
+    .steps > li.passed .step-content span.step-number {
+        background-image: url("/risorse_dt/condivise/immagini/generiche/list-step@2x.png");
+    }
+    .wrapper-delivery-details .link-delivery-details a,
+    .show-other a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue-2x/ico-piu-blu@2x.png");
+    }
+    .steps > li.not-delivered .step-content span.step-number {
+        background-image: url("/risorse_dt/condivise/immagini/icone/ico-pallino-rosso@2x.png");
+    }
+    .steps > li.delivered .step-content span.step-number {
+        background-image: url("/risorse_dt/condivise/immagini/icone/ico-pallino-verde@2x.png");
+    }
+    .btn-shipping {
+        background-image: url(/risorse_dt/condivise/immagini/generiche/informazioni@2x.png);
+    }
+}

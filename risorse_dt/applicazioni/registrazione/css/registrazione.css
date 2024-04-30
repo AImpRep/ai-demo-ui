@@ -1,0 +1,100 @@
+/**************************************************************
+
+    Foglio stile Registrazione - (c) Poste Italiane 2016/2017/2018 - GD//FS//DU
+
+***************************************************************/
+
+
+/***************************/
+
+
+/******* Generici  *******/
+
+
+/***************************/
+
+fieldset:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.context-abstract {
+    margin-bottom: 50px;
+}
+
+.context-abstract p.subtitle {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.context-abstract p.symple-text {
+    margin: 10px 0 0 0;
+    text-transform: none;
+}
+
+div.box-user-id div.box-heading h3.area-heading,
+div.box-user-profile div.box-heading h3.area-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.list-check-off {
+    background: none !important;
+}
+
+.content-consents-privacy .box-evidence {
+    background-color: #ececec;
+    padding: 10px;
+    border: none;
+}
+
+.list-privacy {
+    list-style: outside none none;
+    padding: 0;
+}
+
+.list-privacy li {
+    background-image: url("/risorse_dt/condivise/immagini/generiche/list-check.png");
+    background-position: 5px 7px;
+    background-repeat: no-repeat;
+    padding: 0 0 0 30px;
+    margin-bottom: 10px;
+}
+
+.list-privacy li.no-privacy {
+    background-image: url("/risorse_dt/condivise/immagini/icone/ico-element-remove-blue.png");
+    background-position: 4px 5px;
+    background-repeat: no-repeat;
+    padding: 0 0 0 30px;
+}
+
+
+/***************************/
+
+
+/******* Elementi Obsoleti  *******/
+
+
+/***************************/
+
+
+/*fieldset {
+    border-bottom: 1px solid #ebebeb;
+}*/
+
+
+/* High res Display  */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .list-privacy li {
+        background-image: url("/risorse_dt/condivise/immagini/generiche/list-check@2x.png");
+        background-size: 14px;
+    }
+    .list-privacy li.no-privacy {
+        background-image: url("/risorse_dt/condivise/immagini/icone/ico-element-remove-blue@2x.png");
+        background-size: 14px;
+        ;
+    }
+}

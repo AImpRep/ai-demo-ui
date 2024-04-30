@@ -1,0 +1,203 @@
+.panel-cards-landing {
+    margin-bottom: 0;
+    border: none;
+    background: transparent;
+}
+
+.panel-cards-landing:hover {
+    box-shadow: none;
+}
+
+.content-landing-a {
+    padding: 50px 0 30px 0;
+}
+
+.content-landing-b {
+    padding: 20px 0 30px 0;
+}
+
+h1 {
+    color: #0047bb;
+    font-size: 44px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+
+.panel-cards-landing .panel-wrap {
+    padding: 5px 30px 5px;
+    text-align: center;
+}
+
+.panel-cards-large {
+    padding: 20px 0 0 0;
+}
+
+.panel-wrap {
+    padding: 5px 30px 20px 30px !important;
+    text-align: center;
+}
+
+.panel-cards-landing .panel-wrap-pre img,
+.panel-cards-large .panel-wrap-pre img {
+    margin: 0 auto;
+}
+
+.panel-cards-landing .panel-wrap a.btn {
+    margin: 0;
+}
+
+.content-footer-landing-social {
+    padding: 30px 0 30px;
+    background-color: #eedc00;
+}
+
+.content-footer-landing-legal {
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.text-legal {
+    font-size: 14px;
+}
+
+.content-landing-full-hero .title-and-cards h1 {
+    padding: 20% 0 0 0;
+    color: #fff;
+}
+
+.content-landing-full-hero .title-and-cards p {
+    font-size: 1.1rem;
+}
+
+.content-landing-full-hero .title-without-cards h1 {
+    padding: 45% 0 0 0;
+    margin: 0 0 3% 0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+/* Create a Parallax Effect */
+
+.bg-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+
+.bg-parallax {
+    background-image: url('/risorse_dt/editoriali/hero/mod-fullpage-es1.jpg');
+    min-height: 100%;
+}
+
+/*Carousel fullpage */
+
+.carousel-fullpage .item {
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center top 0px!important;
+}
+.content-hero:first-child .carousel-fullpage .item {
+    background-position: center top 40px!important;
+}
+.carousel-fullpage .carousel-text .carousel-text-wrap {
+    height: 380px;
+    padding: 80px 0 50px;
+    vertical-align: middle;
+}
+.carousel-fullpage .carousel-text .carousel-text-wrap .carousel-text-heading {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.carousel-fullpage .carousel-text .carousel-text-wrap p {
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+.carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap .carousel-text-heading {
+    font-size: 40px;
+}
+.carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap p {
+        font-size: 18px;
+}
+
+@media (max-width: 767px) {
+   /*Carousel fullpage */
+   .carousel-fullpage .carousel-fullpage-thumb-link {
+       display: none;
+   }
+   .carousel-fullpage .item {
+       background-position: center top 0px!important;
+   }
+   .carousel-fullpage .carousel-text .carousel-text-wrap {
+       vertical-align: bottom;
+   }
+   .carousel-fullpage .carousel-text .carousel-text-wrap .carousel-text-heading {
+       font-size: 45px;
+   }
+   .carousel-fullpage .carousel-text .carousel-text-wrap p {
+       font-size: 20px;
+   }
+   .carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap .carousel-text-heading {
+       font-size: 36px;
+   }
+   .carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap p {
+           font-size: 18px;
+   }
+    /*carousel-custom-l*/
+    .carousel-custom-l1 .item,
+    .carousel-custom-l2 .item,
+    .carousel-custom-l3 .item,
+    .carousel-custom-l1 .inner-wrap-item picture,
+    .carousel-custom-l2 .inner-wrap-item picture,
+    .carousel-custom-l3 .inner-wrap-item picture,
+    .carousel-custom-l1 .carousel-text-wrap,
+    .carousel-custom-l2 .carousel-text-wrap,
+    .carousel-custom-l3 .carousel-text-wrap{
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .carousel-fullpage .carousel-fullpage-thumb-link {
+      display: none;
+   }
+   .carousel-fullpage .carousel-text .carousel-text-wrap .carousel-text-heading {
+      font-size: 45px;
+   }
+   .carousel-fullpage .carousel-text .carousel-text-wrap p {
+      font-size: 20px;
+   }
+   .carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap .carousel-text-heading {
+       font-size: 36px;
+   }
+   .carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap p {
+           font-size: 18px;
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+   .carousel-fullpage .carousel-text .carousel-text-wrap .carousel-text-heading {
+      font-size: 45px;
+   }
+   .carousel-fullpage .carousel-text .carousel-text-wrap p {
+      font-size: 20px;
+   }
+   .carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap .carousel-text-heading {
+       font-size: 36px;
+   }
+   .carousel-fullpage .carousel-text.carousel-text-small .carousel-text-wrap p {
+           font-size: 18px;
+   }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bg-parallax {
+        background-attachment: scroll;
+    }
+}

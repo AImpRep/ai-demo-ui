@@ -1,0 +1,1026 @@
+/**************************************************************
+
+    Foglio stile Corporate - (c) Poste Italiane 2016/2021 - GD//FS//DU
+
+***************************************************************/
+
+
+
+
+/* Gestione link */
+/*
+a.underline-link,
+a.underline-link:hover,
+a.underline-link:visited,
+a.underline-link:focus,
+a.underline-link:active{
+  text-decoration: underline;
+}
+*/
+
+/* Gestione link */
+a.underline-link,
+a.underline-link:visited{
+  text-decoration: none;
+  box-shadow: 0 -1px 0 0 #ccc inset;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+a.underline-link:hover,
+a.underline-link:focus,
+a.underline-link:active{
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  box-shadow: 0 -1px 0 0 #0047bb inset;
+}
+
+
+
+/*Breadcrumb*/
+.breadcrumb>li+li::before {
+  background-image: url(/risorse_dt/condivise/immagini/generiche/ico-break-grey-right@2x.png);
+}
+
+.breadcrumb li a {
+  color: #0047bb;
+}
+
+/*Menu contestuale*/
+/*Nav Pills*/
+.panel-cards-boxed-nav {
+  background-color: transparent;
+}
+
+.panel-cards-boxed-nav .panel-wrap-pre{
+  background-color: transparent;
+}
+
+.panel-cards-boxed-nav .panel-wrap-pre.border-sm-bottom{
+  /*border-bottom-color: #ccc !important;*/
+}
+
+.nav-pills > li > .nav-element:hover{
+  border-left-color:  #ececec
+}
+
+.nav-pills > li.active > .nav-element{
+  border-left-color: #ececec;
+}
+
+.nav-pills > li ul li .nav-element{
+  font-size: 0.8rem;
+}
+
+.nav-pills > li ul li:first-child .nav-element::before{
+  display: block;
+  width: 0; 
+  height: 0; 
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #f6f6f6;
+  content: " ";
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*Megamenu*/
+
+#header-poste-italiane.nav-corporate ul li.pi-servizio:hover {
+  cursor: pointer !important;
+}
+
+#header-poste-italiane.nav-corporate .navigation-submenu-container {
+  border-top: 1px solid #ccc;
+}
+
+#header-poste-italiane.nav-corporate .nav-col {
+  font-size: 1rem;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow .col-mainrow:hover {
+  background-color: transparent;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul li a{
+  padding: 6px 0;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul li a:hover,
+#header-poste-italiane.nav-corporate div.navbar-clonewrap ul li a:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, .5);
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .carousel .item {
+  color: #222427;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .carousel .carousel-indicators {
+  bottom: -10px;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .carousel .carousel-indicators li {
+  background-color: #fff;
+  border-color: #979797;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .carousel .carousel-indicators li.active {
+  width: 42px;
+  background-color: #787878;
+  border-color: #787878;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .inner-megamenu-panel-title a{
+  color:#000;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .inner-megamenu-panel-list{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#header-poste-italiane.nav-corporate div.navigation-submenu .inner-megamenu-panel-list::before {
+  display: block;
+}
+
+/*Content*/
+.content-abstract {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-abstract.content-grey {
+  padding: 30px 0 10px
+}
+
+.content-abstract.content-grey h1 {
+  padding-bottom: 10px;
+  font-size: 44px;
+  color: #222427;
+}
+
+.content-abstract.content-grey .abstract {
+  padding: 20px 0px 20px;
+}
+
+.content-footer-pre {
+  padding: 50px 0 50px;
+}
+
+.content-footer-post {
+  padding: 30px 0 90px 0;
+}
+
+/*Circle ProgressBar*/
+.progress-circle {
+  height: 200px;
+  background-color: transparent;
+  position: relative;
+}
+
+.progress-circle>svg {
+  height: 100%;
+  display: block;
+}
+
+.progress-circle .progress-count-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.progress-circle .progress-count-wrap .progress-count {
+  font-size: 64px;
+  line-height: 54px;
+  vertical-align: top;
+}
+
+.progress-circle .progress-count-wrap .progress-count-extra {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.progress-circle .progress-count-wrap .progress-count-desc {
+  font-size: 15px;
+  display: block;
+  text-transform: uppercase;
+  color: #787878;
+}
+
+#progress1 svg {
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Safari */
+  transform: rotate(-90deg);
+}
+
+#progress2 svg {
+  -ms-transform: rotate(-30deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-30deg);
+  /* Safari */
+  transform: rotate(-30deg);
+}
+
+#progress3 svg {
+  -ms-transform: rotate(120deg);
+  /* IE 9 */
+  -webkit-transform: rotate(120deg);
+  /* Safari */
+  transform: rotate(120deg);
+}
+
+/*Carousel fullpage */
+.carousel-fullpage .item {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center top 0px !important;
+}
+
+.content-hero:first-child .carousel-fullpage .item {
+  background-position: center top 40px !important;
+}
+
+.carousel-fullpage .carousel-text .carousel-text-wrap {
+  height: 380px;
+  padding: 80px 0 50px;
+  vertical-align: middle;
+}
+
+.carousel-fullpage .carousel-text .carousel-text-wrap .carousel-text-heading {
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+
+.carousel-fullpage .carousel-text .carousel-text-wrap p {
+  font-size: 32px;
+  padding-bottom: 30px;
+}
+
+/*Carousel word  */
+.carousel-word .item {
+  background-color: transparent;
+}
+
+.carousel-word .carousel-text {
+  padding: 20px 0 20px;
+}
+
+.carousel-word .carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-word .carousel-indicators li {
+  background-color: #fff;
+  border: 1px solid #787878;
+  width: 40px;
+}
+
+.carousel-word .carousel-indicators li.active {
+  background-color: #787878;
+  border-color: #787878;
+}
+
+/* Piccoli comuni */
+p.first-highlight {
+  font-size: 44px;
+}
+
+.custom-quote {
+  float: left;
+  border-top: 2px solid #ececec;
+  margin-top: 40px;
+  padding: 0px 40px;
+}
+
+.custom-quote .custom-quote-testo {
+  font-style: italic;
+}
+
+.custom-quote .custom-quote-nome {
+  text-transform: uppercase;
+}
+
+/* Cards Cabin */
+.cabin {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url(/risorse_dt/condivise/immagini/generiche/placeholder-736x352.jpg);
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.cabin-wrap {
+  min-height: 240px;
+  background-image: url(/risorse_dt/condivise/immagini/generiche/cabin-wrap.png);
+  position: relative;
+}
+
+.cabin-wrap .cabin-body {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.cabin-wrap .cabin-body span {
+  color: #fff !important;
+  display: block;
+}
+
+.cabin-link.cabin-link-abs a {
+  position: absolute;
+  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Cards Bg - Blocked ratio */
+/* panel-cards-bg-complete: col-sm-6 */
+/* panel-cards-bg-square: col-xs-6 col-sm-4 */
+.panel-cards-bg-square {
+  height: 360px;
+}
+
+.panel-cards-bg-complete {
+  height: 400px;
+}
+
+.panel-cards-bg-complete .panel-wrap .panel-body {
+  height: 228px;
+}
+
+.panel-cards-bg-square .panel-wrap {
+  padding: 15px 30px 30px;
+}
+
+.panel-cards-bg-complete .panel-wrap {
+  padding: 5px 30px 30px;
+}
+
+.panel-cards-bg-complete .panel-wrap-pre {
+  padding: 30px 30px 5px;
+}
+
+.panel-cards-bg-complete .panel-wrap-pre .panel-heading {
+  min-height: 40px;
+}
+
+.panel-cards-bg-complete .panel-body p {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.panel-cards.panel-cards-bg-complete {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel-cards-bg-square {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.panel-cards-bg-square .panel-link .btn-card span {
+  text-indent: -9999px;
+  padding: 3px 20px 3px 20px;
+  width: 38px;
+}
+
+.panel-cards-bg-complete.cards-dark .panel-body p,
+.panel-cards-bg-complete.cards-dark .panel-body p a,
+.panel-cards-bg-square.cards-dark .panel-body p,
+.panel-cards-bg-square.cards-dark .panel-body p a {
+  color: #fff;
+}
+
+/* timeline */
+.timeline {
+  background: linear-gradient(#666, #666) no-repeat center/5px 100%;
+}
+
+.timeline::before,
+.timeline::after {
+  content: '';
+  width: 100%;
+  background: repeating-linear-gradient( 0deg, #f6f6f6, #f6f6f6 5px, #666 5px, #666 15px ) no-repeat center/5px;
+  display: block;
+  height: 30px;
+}
+
+.timeline::after {
+  background: repeating-linear-gradient( 0deg, #666, #666 10px, #f6f6f6 5px, #f6f6f6 15px ) no-repeat center/5px;
+}
+
+.tl-element, .tl-element>.panel-cards-default {
+  min-height: 161px;
+}
+
+.tl-left {
+}
+
+.tl-right {
+}
+
+.tl-left.tl-date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.tl-right.tl-date {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.tl-date>.tl-date-wrap>h3 {
+  margin: 0;
+  color: #0047bb;
+}
+
+.tl-left.tl-date::after {
+  content: " ";
+  height: 50px;
+  width: 50px;
+  background-color: #0047bb;
+  border-radius: 25px;
+  border: 15px solid #f6f6f6;
+  display: inline-block;
+  margin-right: -55px;
+}
+
+.tl-right.tl-date::before {
+  content: " ";
+  height: 50px;
+  width: 50px;
+  background-color: #0047bb;
+  border-radius: 25px;
+  border: 15px solid #f6f6f6;
+  display: inline-block;
+  margin-left: -40px;
+}
+
+/*xs*/
+@media (max-width: 767px) {
+
+  /* Megamenu */
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container {
+    border-top: none;
+    line-height: 26px;
+  }
+
+  /* Carousel fullpage */
+  .carousel-fullpage .carousel-fullpage-thumb-link {
+    display: none;
+  }
+
+  .carousel-fullpage .item {
+    background-position: center top 0px !important;
+  }
+
+  .carousel-fullpage .carousel-text .carousel-text-wrap {
+    vertical-align: bottom;
+  }
+
+  .carousel-fullpage .carousel-text .carousel-text-wrap .carousel-text-heading {
+    font-size: 45px;
+  }
+
+  .carousel-fullpage .carousel-text .carousel-text-wrap p {
+    font-size: 20px;
+  }
+
+  /* Cards bg */
+  .panel-cards-bg-complete {
+    height: calc(73vw - 30px);
+  }
+
+  .panel-cards-bg-complete .panel-wrap .panel-body {
+    height: auto;
+  }
+
+  .panel-cards-bg-square {
+    height: calc(50vw - 30px);
+  }
+
+  .panel-cards-bg-square .panel-wrap {
+    padding: 15px 20px 30px;
+  }
+
+  /* Card Cabin */
+  .cabin-wrap {
+    min-height: 280px;
+  }
+
+  /* timeline */
+  .timeline {
+    background-position-x: 8px;
+  }
+
+  .timeline::before,
+  .timeline::after {
+    background-position-x: 8px;
+  }
+
+  .tl-left.tl-date {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .tl-left.tl-date::after {
+    display: none;
+  }
+
+  .tl-left.tl-date::before {
+    content: " ";
+    height: 50px;
+    width: 50px;
+    background-color: #0047bb;
+    border-radius: 25px;
+    border: 15px solid #f6f6f6;
+    display: inline-block;
+  }
+
+  .tl-left.tl-date::before,
+  .tl-right.tl-date::before {
+    margin-left: -14px;
+  }
+
+  .tl-element, .tl-element > .panel-cards-default {
+    min-height: 100px;
+  }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Megamenu */
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow h3:not(.pi-servizio-mobile),
+  #header-poste-italiane.nav-corporate div.navbar-clonewrap h3:not(.pi-servizio-mobile) {
+    display: block;
+    height: auto;
+    padding: 8px 0px 0px 0px;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container {
+    border-top: none;
+  }
+
+  /* ProgressBar */
+  .progress {
+    height: 150px;
+    background-color: transparent;
+  }
+ 
+  /* Carousel fullpage */
+  .carousel-fullpage .carousel-fullpage-thumb-link {
+    display: none;
+  }
+
+  .carousel-fullpage .carousel-text .carousel-text-wrap .carousel-text-heading {
+    font-size: 45px;
+  }
+
+  .carousel-fullpage .carousel-text .carousel-text-wrap p {
+    font-size: 20px;
+  }
+
+  /* Cards bg */
+  .panel-cards-bg-complete {
+    height: 248px;
+  }
+
+  .panel-cards-bg-complete .panel-wrap .panel-body {
+    height: 95px;
+  }
+
+  .panel-cards-bg-square {
+    height: 220px;
+  }
+
+  /* timeline */
+  .timeline {
+    background-position-x: 8px;
+  }
+
+  .timeline::before,
+  .timeline::after {
+    background-position-x: 8px;
+  }
+
+  .tl-left.tl-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .tl-left.tl-date::after {
+    display: none;
+  }
+
+  .tl-left.tl-date::before {
+    content: " ";
+    height: 50px;
+    width: 50px;
+    background-color: #0047bb;
+    border-radius: 25px;
+    border: 15px solid #f6f6f6;
+    display: inline-block;
+  }
+
+  .tl-left.tl-date::before,
+  .tl-right.tl-date::before {
+    margin-left: -14px;
+  }
+
+  .tl-element, .tl-element > .panel-cards-default {
+    min-height: 100px;
+  }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  body{
+    padding-top: 110px;
+  }
+
+  /* Megamenu */
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container {
+    background-color: #f6f6f6;
+  }
+  
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container #mainrow-dx {
+    padding-left: 15px;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow .col-mainrow.col-mainrow-evidence {
+    border-right: 4px solid #eedc00;
+    text-transform: uppercase;
+    min-height: 300px;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list{
+    padding-left: inherit;
+    padding-right: inherit;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li a,
+  #header-poste-italiane.nav-corporate div.navbar-clonewrap ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #222427;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container .col-mainrow-nohover h3{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container .col-mainrow-nohover button.close{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    cursor: pointer;
+    opacity: 1;
+    font-size: 36px;
+    color: #222427;
+    font-weight: 100;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow .col-mainrow-evidence{
+    margin-bottom: 15px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list{
+    padding-bottom: 0px;
+    margin-right: -30px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li a{
+    padding-left: 15px;
+    padding-right: 30px!important;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.inner-megamenu-panel-list li a{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li a:hover{
+    background-color: #ececec;
+    color: #0047bb;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li.active a{
+    background-color: #eedc00;
+    color: #222427;
+  } 
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.inner-megamenu-panel-list li a:hover{
+    background-color: transparent;
+    color: #0047bb;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .inner-megamenu-panel-title{
+    padding-left: 0px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .inner-megamenu-panel-title a:hover{
+    background-color: transparent;
+    color: #0047bb;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list .has-inner-megamenu-panel.area-ico a{
+    background-size: 6px 9px;
+    background-position: top 10px right 15px;
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio:hover a.first-level {
+    color: inherit;
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio:hover {
+    border-bottom-color: rgba(0, 0, 0, .15);
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio-active,
+  #header-poste-italiane.nav-corporate ul li.pi-servizio-active:hover {
+    border-bottom-color: #0047bb;
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio {
+    margin: 0;
+    padding: 0 7px;
+  }
+
+
+  
+  /* Breadcrumb */
+
+  .breadcrumb {
+    padding: 10px 0 22px 0;
+  }
+
+  /* default state */
+  .content-header {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content-header #header-poste-italiane .navbar-logo {
+    height: 70px;
+    background-color: #eedc00;
+  }
+
+  .content-header-federation-bar{
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index:1041;
+  }
+  
+  .content-header-federation-bar .content-header .navbar-logo {
+    position: relative;
+  }
+
+  .content-header-federation-bar .content-header .navbar-logo:before,
+  .content-header-federation-bar .content-header .navbar-logo:after {
+    content: "";
+    background-color: #eedc00;
+    height: 100%;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    display: block;
+  }
+
+  .content-header-federation-bar .content-header .navbar-logo:after {
+    right: -15px;
+  }
+
+  .content-header-federation-bar .content-header .navbar-logo:before {
+    left: -15px;
+  }
+
+  /* Cards bg */
+  .panel-cards-bg-complete {
+    height: 328px;
+  }
+
+  .panel-cards-bg-complete .panel-wrap .panel-body {
+    height: 156px;
+  }
+
+  .panel-cards-bg-square {
+    height: 290px;
+  }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  
+  body{
+    padding-top: 110px;
+  }
+
+  #main-dx {
+    padding-left: 0px;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container {
+    background-color: #f6f6f6;
+  }
+  
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container #mainrow-dx {
+    padding-left: 40px;
+  }
+  
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow .col-mainrow.col-mainrow-evidence {
+    border-right: 4px solid #eedc00;
+    text-transform: uppercase;
+    min-height: 300px;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list{
+    padding-left: inherit;
+    padding-right: inherit;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li a,
+  #header-poste-italiane.nav-corporate div.navbar-clonewrap ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #222427;
+  }
+  
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container .col-mainrow-nohover h3{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container .col-mainrow-nohover button.close{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    cursor: pointer;
+    opacity: 1;
+    font-size: 36px;
+    color: #222427;
+    font-weight: 100;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow .col-mainrow-evidence{
+    margin-bottom: 15px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list{
+    padding-bottom: 0px;
+    margin-right: -30px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li a{
+    padding-left: 15px;
+    padding-right: 30px!important;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.inner-megamenu-panel-list li a{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li a:hover{
+    background-color: #ececec;
+    color: #0047bb;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list li.active a{
+    background-color: #eedc00;
+    color: #222427;
+  } 
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.inner-megamenu-panel-list li a:hover{
+    background-color: transparent;
+    color: #0047bb;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .inner-megamenu-panel-title{
+    padding-left: 0px;
+  }
+  #header-poste-italiane.nav-corporate div.navigation-submenu .inner-megamenu-panel-title a:hover{
+    background-color: transparent;
+    color: #0047bb;
+  }
+
+  #header-poste-italiane.nav-corporate div.navigation-submenu .navigation-submenu-container-mainrow ul.col-mainrow-evidence-list .has-inner-megamenu-panel.area-ico a{
+    background-size: 6px 9px;
+    background-position: top 10px right 15px;
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio:hover a.first-level {
+    color: inherit;
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio:hover {
+    border-bottom-color: rgba(0, 0, 0, .15);
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio-active,
+  #header-poste-italiane.nav-corporate ul li.pi-servizio-active:hover {
+    border-bottom-color: #0047bb;
+  }
+
+  #header-poste-italiane.nav-corporate ul li.pi-servizio {
+    margin: 0;
+    padding: 0 17px;
+  }
+
+
+
+  /* Breadcrumb */
+  .breadcrumb {
+    padding: 10px 0 22px 0;
+  }
+
+  /* default state */
+  .content-header {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content-header #header-poste-italiane .navbar-logo {
+    height: 70px;
+    background-color: #eedc00;
+  }
+
+  .content-header-federation-bar{
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index:1041;
+  }
+
+  .content-header-federation-bar .content-header .navbar-logo {
+    position: relative;
+  }
+
+  .content-header-federation-bar .content-header .navbar-logo:before,
+  .content-header-federation-bar .content-header .navbar-logo:after {
+    content: "";
+    background-color: #eedc00;
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    display: block;
+  }
+
+  .content-header-federation-bar .content-header .navbar-logo:after {
+    right: -30px;
+  }
+
+  .content-header-federation-bar .content-header .navbar-logo:before {
+    left: -30px;
+  }
+
+
+
+}
+
+
+
+
+/*Custom mq*/
+@media screen and (max-device-width: 767px) and (orientation: portrait) {
+  .panel-cards.panel-cards-bg-square .panel-heading h3{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .panel-cards.panel-cards-bg-square .panel-heading h3{
+    font-size: 30px;
+  }
+}
+
+
+
+/*Custom Iframe*/
+@media (max-width: 637px) {
+  .cf-investitori01 {
+    height: 515px !important;
+  }
+}
+
+@media (max-width:578px) {
+  .cf-investitori02 {
+    height: 1300px !important;
+  }
+}

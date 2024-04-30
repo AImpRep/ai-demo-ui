@@ -1,0 +1,157 @@
+/*****************************************************
+
+    Foglio stile - (c) Poste Italiane 2016/2019  - Piccoli Comuni -  GD//FS//DU
+
+*****************************************************/
+/*override*/
+
+.content-search{
+  z-index: 1;
+}
+
+.panel-cards-default-icon .panel-heading {
+  background-image: url(/risorse_dt/applicazioni/iniziative/piccoli-comuni/immagini/card-title-bg.png);
+}
+
+.panel-detailed-cards.panel-cards-default-icon {
+  background-image: url(/risorse_dt/applicazioni/iniziative/piccoli-comuni/immagini/Slice@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 92px;
+}
+
+.panel-detailed-cards.panel-cards-default-icon .panel-wrap {
+  background-image: none;
+}
+
+.panel-cards-default-icon .panel-heading .panel-heading-wrap.panel-heading-wrap-ico-iniziative {
+  background-size: 56px;
+}
+
+.panel-cards-default-icon.panel-cards-inverse .panel-heading .panel-heading-wrap.panel-heading-wrap-ico-iniziative {
+  background-position: right -3px top -4px;
+}
+
+.panel-cards-default-icon .panel-heading h4 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.panel .panel-check, .panel-cards .panel-check {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+.panel .panel-check-default span, .panel-cards .panel-check-default span {
+  display: block;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+  background-image: url(/risorse_dt/applicazioni/iniziative/piccoli-comuni/immagini/ico-ok@2x.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.media .media-left {
+  padding-right: 30px;
+}
+
+.container-box-static {
+  position: static;
+}
+
+.banner-advice {
+  bottom: 45px;
+}
+
+.container-box-search .tt-menu {
+  top: 60px !important;
+}
+
+/**/
+.content-bg-pattern-01 {
+  background-color: #fff;
+  padding: 50px 0 30px 0;
+}
+
+.content-bg-pattern-01::before {
+  position: absolute;
+  top: 0;
+  content: " ";
+  width: 100%;
+  height: 220px;
+  z-index: 0;
+  border-top: 220px solid #f6f6f6;
+  border-radius: 30% 30% 0 0;
+}
+
+.content-bg-pattern-01.content-bg-pattern-inverse::before {
+  border-bottom: 220px solid #f6f6f6;
+  border-radius: 0 0 30% 30%;
+  bottom: 0;
+  top: auto;
+}
+
+.content-bg-pattern-01 .content-bg-pattern-wrap::before {
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 220px;
+  content: " ";
+  width: 100%;
+  height: calc(100% - 220px);
+  z-index: 0;
+}
+
+.content-bg-pattern-01.content-bg-pattern-inverse .content-bg-pattern-wrap::before {
+  top: auto;
+  bottom: 220px;
+  z-index: 0;
+}
+
+.thumbnail-gallery-pi {
+  margin: 0;
+}
+
+.btn .glyphicon {
+  top: 3px;
+}
+
+@media (max-width: 767px) {
+  .content-box-search {
+    background-color: #fff;
+    padding: 20px 0px 5px;
+  }
+
+  .container-box-search {
+    position: static;
+  }
+
+  .container-box-static-xs {
+    position: static;
+  }
+
+  .media .media-left {
+    display: block;
+  }
+
+  .media .media-object {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .banner-advice {
+    bottom: 5px;
+  }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/*lg*/
+@media (min-width: 1200px) {}

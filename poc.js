@@ -4,7 +4,7 @@
 
 // BE ENDPOINT (and actions)
 const ENDPOINT = {
-  BASE: "/api/generate-content/",
+  BASE: "http://localhost:3001/",
   DESCRIBE: "describe",
   ASSIST: "assist",
   HELP: "help",
@@ -237,7 +237,7 @@ function sendMessage(e, content) {
     disabledSectionInput(true);
 
     request(
-      ENDPOINT["BASE"],
+      ENDPOINT["BASE"] + ENDPOINT["SEND_MESS"],
       {
         action: ENDPOINT["SEND_MESS"],
         params: {

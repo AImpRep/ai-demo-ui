@@ -1,0 +1,458 @@
+/***************************/
+/********* Generici ********/
+/***************************/
+
+.webview-full-width {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+.webview-progress-header {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.webview-bgwhite {
+    background-color: white;
+}
+.webview-bggrey {
+    background-color: #f6f6f6;
+}
+.webview-blue-text {
+    color: #0047bb;
+}
+.webview-secondary-text {
+    color: #787878;
+}
+.webview-border {
+    border: 1px solid #dedede;
+}
+.webview-area-heading {
+    margin: 10px 0px 10px 0px;
+}
+.webview-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-webview-custom {
+    border-color: #4a4a4a !important;
+}
+.btn-webview-custom:hover,
+.btn-webview-custom:focus,
+.btn-webview-custom.active,
+.btn-webview-custom:active,
+.btn-webview-custom.focus {
+    background-color: transparent !important;
+}
+.webview-note {
+    font-size: 14px !important;
+}
+.webview-no-background {
+    background: none !important;
+}
+
+
+/***************************/
+/********** Header *********/
+/***************************/
+
+.content-federation-bar-simplified .header-minified.webview .chiudi a,
+.content-federation-bar-simplified .header-minified.webview .back a {
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 0 0 0 26px;
+    color: #222427;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 22px;
+}
+.content-federation-bar-simplified .header-minified.webview .chiudi a {
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-annulla.png");
+
+}
+.content-federation-bar-simplified .header-minified.webview .back a {
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-torna-indietro.png");
+}
+.header-minified.webview .wrap-logo {
+    color: #222427;
+    font-size: 20px;
+}
+a.webview-assistenza {
+    display: block;
+    float: right;
+    width: 43px;
+    height: 43px;
+    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-assistenza-domande-frequenti.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center right;
+}
+
+
+
+/*******************************/
+/******* Finestre modali *******/
+/*******************************/
+
+.webview-modal .modal-header {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+    line-height: 1.7;
+}
+.webview-modal .modal-content {
+    border: none;
+    border-radius: 5px;
+}
+.webview-modal .close {
+    float: left;
+    margin: 0;
+}
+.webview-modal .modal-title {
+    line-height: 1.6;
+}
+
+
+/***************************/
+/******** Accordion ********/
+/***************************/
+
+.webview-list-like .panel-tools .panel-body {
+    padding: 0px 15px;
+}
+.webview-list-like .area-evidence-active {
+    background-color: white;
+    border: none;
+}
+.webview-list-like .panel-heading label.control-label div {
+    float: left;
+    width: 15%;
+    margin-right: 5%;
+}
+.webview-list-like .panel-heading label.control-label div img {
+    display: block;
+    margin: 0 auto;
+    max-width: 30px;
+}
+.webview-list-like .panel-heading label.control-label span {
+    float: left;
+    width: 73%;
+}
+.webview-list-like .panel-heading label.control-label span.custom-radio {
+    float: left;
+    width: 7%;
+}
+
+
+
+/* SEZIONE CONTRATTI, CLAUSOLE VESSATORIE E INFORMATIVA PRIVACY */
+
+.webview-accordion-like {
+    position: relative;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+li.webview-accordion-like {
+    border-bottom: 1px solid #dedede;
+
+}
+
+.webview-accordion-like a {
+    vertical-align: middle;
+    width: 90%;
+    display: block;
+}
+
+.webview-accordion-like .note a {
+    display: inline;
+    color: #0047bb;
+}
+
+.webview-accordion-like img {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.webview-accordion-like .content-to-show {
+    margin-left: -35px;
+}
+
+
+
+/***************************/
+/******* Slider *******/
+/***************************/
+
+
+/* funnel */
+
+.webview-scroller-slick-wrap-start-funnel .webview-scroller-slick-area li.webview-scroll {
+    border: none;
+    width: 325px;
+    background: none !important;
+    white-space: normal;
+    display: block;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin: 0 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 280px;
+}
+.funnel-element {
+    margin: 30px 0;
+}
+
+
+/* card */
+
+.webview-scroller-slick-area li.webview-scroll {
+    border: none;
+    width: 280px;
+    background-color: #000;
+    white-space: normal;
+    display: block;
+    float: left;
+    height: 204px;
+    margin: 0 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 280px;
+}
+.webview-scroller-slick-area li.webview-scroll a span.webview-content {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    top: auto;
+    padding: 0;
+    text-align: right;
+    font-size: 2em;
+    color: #fff;
+}
+.webview-scroller-slick-area li.webview-scroll a span.webview-description {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    top: auto;
+    text-align: right;
+    font-size: 70%;
+    color: #fff;
+    font-style: italic;
+}
+.webview-scroller-slick-area li.webview-scroll a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 204px;
+    width: 285px;
+    padding: 30px;
+    position: relative;
+}
+.webview-scroller-slick.webview-scroller-slick-area {
+    width: 100%;
+}
+.webview-scroller-slick-area {
+    padding: 0;
+}
+.webview-scroller-slick .slick-slide img {
+    display: initial;
+}
+.webview-scroller-slick .slick-dots {
+    width: auto;
+    left: 0;
+    right: 0;
+}
+.webview-scroller-slick.webview-scroll {
+    width: 100%
+}
+
+
+
+
+/***************************/
+/******* Riepilogo *********/
+/***************************/
+
+
+
+.webview-border-item {
+    border: 1px solid #dedede;
+    border-radius: 7px;
+}
+.webview-buttons-row .button-item {
+    overflow: hidden;
+    width: 100%;
+    padding: 12px 20px;
+}
+.webview-buttons-row .button-item .button-item-content {
+    overflow: hidden;
+    width: 100%;
+}
+.webview-buttons-row-icon,
+.webview-buttons-row-text,
+.webview-buttons-row-status {
+    float: left;
+}
+.webview-buttons-row-icon {
+    width: 21%;
+    margin-right: 2%;
+}
+.webview-buttons-row-icon img {
+    display: block;
+    width: 40px;
+    float: left;
+}
+.webview-buttons-row-text {
+    width: 60%;
+    margin: 0px;
+}
+.webview-buttons-row-status {
+    width: 15%;
+    margin-left: 2%;
+}
+.webview-buttons-row-status img {
+    display: block;
+    width: 25px;
+    float: right;
+}
+.webview-buttons-row .collapse {
+    width: 100%;
+    border-top: 1px solid #dedede;
+}
+.webview-buttons-row-status.accordion {
+    background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-up.png);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    background-size: 14px 9px;
+    height: 35px;
+}
+.webview-buttons-row-status.accordion.collapsed {
+    background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-down.png);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    background-size: 14px 9px;
+}
+
+
+
+
+
+/******************************************/
+/******* Con illustrazione centrale *******/
+/******************************************/
+
+
+.button-item-type2 {
+    overflow: hidden;
+    width: 100%;
+    padding: 12px 20px;
+}
+.button-item-type2-content {
+    overflow: hidden;
+    width: 100%;
+}
+.button-item-type2 .left {
+    float: left;
+    width: 60%;
+}
+.button-item-type2 .right {
+    float: left;
+    width: 37%;
+    padding-left: 3%;
+    margin-left: 3%;
+    border-left: 1px solid #dedede;
+}
+.button-item-type2 p {
+    margin: 0;
+    font-size: 18px;
+}
+.button-item-type2 .right p {
+    font-size: 20px;
+}
+.button-item-type2 span {
+    font-size: 15px;
+}
+.webview-payment-method .amount .currency {
+    font-size: 28px;
+    font-weight: bold;
+}
+.webview-payment-method .amount .amount {
+    font-size: 40px;
+    font-weight: bold;
+}
+.webview-payment-method .amount .caption {
+    font-size: 14px;
+    display: block;
+    clear: both;
+}
+
+
+
+
+/***************************************/
+/******* Regole specifiche form ********/
+/***************************************/
+
+label.control-label {
+  text-transform: none;
+  font-size: 15px;
+}
+.form-group-lg .form-control {
+  padding-left: 0px;
+  font-size: 24px;
+  font-style: normal;
+  color: #000000;
+}
+.form-group-lg .form-control::placeholder,
+.form-group-lg .form-control::-webkit-input-placeholder,
+.form-group-lg .form-control::-moz-placeholder {
+  font-style: normal;
+  font-size: 20px;
+  color: #787878;
+}
+.form-control:focus + div.input-group-addon {
+  border-color: #0047BB;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+.form-control + div.input-group-addon {
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+.input-group-addon a {
+  font-size: 17px;
+  font-weight: bold;
+}
+.webview-input-caption {
+  font-size: 15px;
+  color: #4a4a4a;
+  display: inline-block;
+  margin-top: 10px;
+}
+.has-error .webview-input-caption {
+  color: #ff3636;
+}
+.form-group-lg.has-warning .form-control {
+  color: #ffb906;
+}
+.form-group-lg.has-error .form-control {
+  color: #ff3636;
+}
+.has-success .control-label,
+.has-warning .control-label,
+.has-error .control-label {
+  color: #787878 !important;
+}
+.has-warning select,
+.has-error select {
+  color: #000000 !important;
+}
+
+

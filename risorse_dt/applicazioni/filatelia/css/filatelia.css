@@ -1,0 +1,203 @@
+/* Override */
+
+.main-pills-basic .border-xs-top,
+.main-pills-basic .border-sm-top,
+.main-pills-basic .border-md-top,
+.main-pills-basic .border-lg-top,
+.main-pills-basic .border-xs-bottom,
+.main-pills-basic .border-sm-bottom,
+.main-pills-basic .border-md-bottom,
+.main-pills-basic .border-lg-bottom {
+    border-bottom-color: #ccc !important;
+}
+
+.note-soft {
+    color: #787878;
+}
+
+
+
+/* Override Carrello */
+.panel-tools-static .panel-heading .tablecell-like {
+    height: 74px;
+}
+
+.panel-tools-static .panel-heading .radio,
+.panel-tools-static .panel-heading .checkbox {
+    line-height: 74px;
+}
+
+.panel-tools-static .panel-heading .img-responsive {
+    width:100% /*fix IE11*/
+}
+
+/* Override Abstract */
+.content-abstract-bg-filatelia{
+  background-image: url(/risorse_dt/applicazioni/filatelia/immagini/abstract-bg@2x.png);
+}
+
+
+/* Card Detailed complete (con img) */
+.panel-detailed-cards-complete .panel-wrap{
+  padding-left: 0px;
+  background-image: none;
+}
+
+.panel-detailed-cards-complete .panel-wrap-pre{
+  background-color: #ccc;
+  height: 100%;
+  padding: 40px 20px;
+}
+
+.panel-detailed-cards-complete .panel-wrap-pre img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.panel-detailed-cards-complete .panel-link .btn-card span {
+    text-indent: -9999px;
+    padding: 3px 20px 3px 20px;
+    width: 38px;
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .panel-detailed-cards-complete .panel-wrap{
+    padding-left: 20px;
+  }
+  .panel-detailed-cards-complete .panel-wrap-pre{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .panel-detailed-cards-complete .panel-wrap-pre img {
+    position: relative;
+    top:auto;
+    left: auto;
+    transform: none;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%; 
+  }
+
+  .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-home.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-francobollo.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-03 a {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-francobollo-catalogo.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-04 a {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-carrello.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-05 a {
+    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-ordini.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-06 a {
+    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-calendario.png);
+  }
+
+  .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:focus,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-home.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:focus,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-francobollo.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:hover,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:focus,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-03 a.active {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-francobollo-catalogo.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:hover,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:focus,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-04 a.active {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-carrello.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-05 a:hover,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-05 a:focus,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-05 a.active {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-ordini.png);
+  }
+  .wrap-application-nav ul.application-nav li.ico-specific-element-06 a:hover,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-06 a:focus,
+  .wrap-application-nav ul.application-nav li.ico-specific-element-06 a.active {
+      background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-calendario.png);
+  }
+
+}
+
+
+
+
+
+/* Retina mQ */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-home@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-francobollo@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-francobollo-catalogo@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-carrello@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-05 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-ordini@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-06 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-calendario@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-home@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-francobollo@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-francobollo-catalogo@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-carrello@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-05 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-05 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-05 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-ordini@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-06 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-06 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-06 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-calendario@2x.png);
+    }
+}

@@ -1,0 +1,195 @@
+/*****************************************************
+
+    Foglio stile - (c) Poste Italiane 2016/2019  - Iniziative -  GD//FS//DU
+
+*****************************************************/
+
+
+/*Forced Autocomplete*/
+
+.tt-suggestion {
+    padding: 3px 20px!important;
+}
+
+
+/* Content */
+
+.content-iniziative-a {
+    padding: 80px 0 30px 0;
+}
+
+.content-iniziative-b {
+    padding: 50px 0 30px 0;
+}
+
+.content-iniziative-c {
+    padding: 20px 0 30px 0;
+}
+
+.content-iniziative-d {
+    padding: 0;
+}
+
+.content-color.content-bg {
+    padding: 0;
+}
+
+.content-bg.content-bg-present {
+    background-position: top right calc(50% - 450px);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 500px;
+}
+
+.carousel-l1 .carousel-text .carousel-text-wrap,
+.carousel-l2 .carousel-text .carousel-text-wrap,
+.carousel-l3 .carousel-text .carousel-text-wrap {
+    padding: 50px 0 75px;
+}
+
+
+/* Pills area */
+
+.pills-area,
+.main-pills.pills-area {
+    position: relative;
+    padding: 40px 0;
+}
+
+.pills-area-wrap,
+.main-pills.pills-area .pills-area-wrap,
+.main-pills.pills-area .main-pills-wrap {
+    padding: 40px 80px;
+}
+
+.pills-area.enlarge,
+.main-pills.enlarge {
+    line-height: 1.4;
+}
+
+
+/*Generic*/
+
+.link-other {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.link-other img {
+    padding-right: 10px;
+}
+
+.panel-detailed-cards.panel-cards-default-icon .panel-wrap {
+    padding: 30px 30px 45px 30px;
+    position: relative;
+}
+
+.panel-detailed-cards.panel-cards-default-icon h4 {
+    color: #222427;
+}
+
+
+/* Panel cards icon - inverse */
+
+.panel-cards-default-icon.panel-cards-inverse .panel-heading {
+    background-position: right top;
+}
+
+.panel-cards-default-icon.panel-cards-inverse .panel-heading .panel-heading-wrap {
+    background-position: right 13px top 12px;
+    padding-left: inherit;
+    padding-right: 60px;
+}
+
+
+/*xs*/
+
+@media (max-width: 767px) {
+    .content-iniziative-a {
+        padding: 50px 0 25px 0;
+    }
+    .content-iniziative-b {
+        padding: 25px 0 25px 0;
+    }
+    .content-iniziative-c {
+        padding: 20px 0 20px 0;
+    }
+    .content-color-yellow.content-bg-present {
+        background-color: #f6f6f6;
+    }
+    .content-bg.content-bg-present {
+        background-position: top center;
+        background-size: calc(100% - 30px);
+    }
+    .content-bg.content-bg-present .present-desc {
+        margin-top: 500px;
+        background-color: #fff;
+    }
+    .content-color-yellow.content-bg-present .present-desc {
+        background-color: #eedc00;
+    }
+    .pills-area,
+    .main-pills.pills-area {
+        position: relative;
+        padding: 0;
+    }
+    .pills-area-wrap,
+    .main-pills.pills-area .pills-area-wrap,
+    .main-pills.pills-area .main-pills-wrap {
+        padding: 20px;
+    }
+}
+
+
+/*sm*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-iniziative-a {
+        padding: 60px 0 25px 0;
+    }
+    .content-iniziative-b {
+        padding: 40px 0 25px 0;
+    }
+    .content-iniziative-c {
+        padding: 20px 0 20px 0;
+    }
+    .content-color-yellow.content-bg-present {
+        background-color: #f6f6f6;
+    }
+    .content-bg.content-bg-present {
+        background-position: top center;
+        background-size: 720px;
+    }
+    .content-bg.content-bg-present .present-desc {
+        margin-top: 460px;
+        background-color: #fff;
+    }
+    .content-color-yellow.content-bg-present .present-desc {
+        background-color: #eedc00;
+    }
+    .pills-area,
+    .main-pills.pills-area {
+        position: relative;
+        padding: 0;
+    }
+    .pills-area-wrap,
+    .main-pills.pills-area .pills-area-wrap,
+    .main-pills.pills-area .main-pills-wrap {
+        padding: 20px;
+    }
+}
+
+
+/*md*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .content-bg.content-bg-present {
+        background-position: top right calc(50% - 435px);
+    }
+}
+
+
+/*lg*/
+
+@media (min-width: 1200px) {}

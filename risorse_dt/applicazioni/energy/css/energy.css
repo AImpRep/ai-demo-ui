@@ -1,0 +1,621 @@
+/**************************************************************
+
+Foglio stile Energy - (c) Poste Italiane 2021 - GD//FS//DU
+
+***************************************************************/
+
+
+/* Content */
+
+.content-submenu {
+    background-color: #fff;
+}
+
+
+/*
+.content-color,
+.col-color,
+.bg-color {
+    background-color: #f7f9fd;
+}
+*/
+
+.content-color input.form-control,
+.content-color select.form-control,
+.content-color span.form-control,
+.content-color .form-control,
+.content-color .input-group-addon,
+.content-color .has-error .input-group-addon,
+.content-color .has-success .input-group-addon,
+.content-color .has-warning .input-group-addon {
+    background-color: #fff;
+    border-color: #fff;
+    border-width: 1px;
+}
+
+.radio-dressed {
+    display: flex
+}
+
+.radio-dressed .control-label {
+    flex-basis: calc(33.33% - 10px);
+    flex-direction: row;
+    border: 1px solid #d0d0d0;
+    padding: 10px 15px 10px 31px;
+    width: 1rem;
+}
+
+.radio-dressed .control-label.selected {
+    border-left: 5px solid #0047bb;
+    padding: 10px 15px 10px 27px;
+    background-color: #f0f5fb
+}
+
+.radio-dressed .custom-radio {
+    top: 13px;
+    left: 8px;
+}
+
+.radio-dressed .custom-radio.selected {
+    left: 4px;
+}
+
+
+/* v-align */
+
+.vtop-content {
+    display: flex;
+    align-items: top;
+}
+
+
+/* Liste */
+
+.list-promo,
+.list-sustainability {
+    list-style: none;
+    padding: 0;
+}
+
+.list-check li,
+.list-promo li,
+.list-sustainability li {
+    padding: 3px 0 3px 30px;
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+}
+
+.list-check li,
+.list-sustainability li {
+    background-size: 14px;
+}
+
+.list-promo li {
+    background-image: url(/risorse_dt/applicazioni/energy/immagini/ico-promo.png);
+}
+
+.list-sustainability li {
+    background-image: url(/risorse_dt/applicazioni/energy/immagini/foglia-blu.png);
+}
+
+
+/* sezione bollette */
+
+.content-energy .container-table th {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-size: 85%;
+    color: #787878;
+    font-weight: 600;
+}
+
+.content-energy .container-table .table {
+    width: calc(100% - 2px);
+    margin-left: 1px;
+}
+
+.content-energy .container-table th,
+.content-energy .container-table td {
+    padding: 20px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content-energy .container-table .table>thead>tr>th {
+    border: none;
+}
+
+.content-energy .container-table td div {
+    padding: 7px 2px;
+}
+
+.content-energy .container-table tbody {
+    background-color: #fff;
+    border: 1px solid #ececec;
+}
+
+.content-energy .container-table .table>tbody>tr {
+    border-top: 2px solid #ececec;
+}
+
+.content-energy .container-table .table>tbody>tr:first-child {
+    border-top: 1px solid #ececec;
+}
+
+.content-energy .container-table td div.border {
+    border-right: 1px solid #ececec;
+}
+
+.content-table-like {
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+
+.header-table-like {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-size: 90%;
+    color: #787878;
+}
+
+.row-table-like:first-child {
+    border-top: 1px solid #ececec;
+    margin-top: 15px;
+}
+
+.row-table-like {
+    padding: 15px 0;
+    border-bottom: 2px solid #ececec;
+    text-align: left;
+}
+
+.row-table-like span {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.row-table-like label {
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+.amount {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.hidden-text {
+    visibility: hidden;
+}
+
+.row-table-like .border {
+    border-right: 1px solid #ececec;
+}
+
+.row-table-like:last-child {
+    border-bottom: 1px solid #ececec;
+}
+
+
+/* Altro */
+
+.content-cards-pressed .panel-detailed-cards {
+    margin-bottom: 0;
+}
+
+.content-cards-pressed .panel-detailed-cards:last-child {
+    margin-bottom: 30px;
+    border-top: 0;
+}
+
+.content-cards-pressed .panel-detailed-cards .panel-wrap,
+.content-cards-pressed .panel-detailed-cards-bg .panel-wrap {
+    background: none;
+}
+
+.panel-detailed-cards-bg .panel-wrap .gestione-fornitura {
+    background-position: 15px 0;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+.gestione-fornitura {
+    background-position: 15px 0;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+.gestione-fornitura:last-child {
+    padding-left: 100px;
+}
+
+.checkbox-floating-sx .custom-checkbox {
+    float: left;
+}
+
+.checkbox-floating-sx span:last-child {
+    margin-top: -18px;
+    padding-left: 20px;
+}
+
+.panel-cards-energy {
+    min-height: 222px;
+}
+
+.panel-cards-energy .panel-wrap {
+    padding: 30px 30px 45px 30px;
+}
+
+.panel-cards-energy .panel-wrap h4 {
+    margin: 0;
+    float: left;
+}
+
+.panel-cards-energy .panel-wrap h4 img {
+    margin-right: 10px;
+    vertical-align: middle;
+    float: left;
+}
+
+.panel-cards-energy .panel-link .btn-card span {
+    text-indent: -9999px;
+    padding: 3px 20px 3px 20px;
+    width: 38px;
+}
+
+.panel-cards .panel-wrap .panel-heading {
+    min-height: auto;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 20px;
+}
+
+.panel-cards-energy-tipologia-utenza.panel-cards .panel-wrap .panel-heading {
+    border: none;
+}
+
+.panel-cards-energy-tipologia-utenza.panel-cards .panel-wrap .panel-heading img {
+    margin: auto;
+}
+
+.panel-cards-energy-tipologia-utenza .close-icon {
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    opacity: none;
+}
+
+.panel-detailed-cards:not(.panel-detailed-cards-clean) .price-value {
+    font-size: 60px;
+}
+
+.panel-detailed-cards:not(.panel-detailed-cards-clean) .price-detail.price-detail-xs .price-value {
+    font-size: 26px;
+}
+
+.panel-detailed-cards-clean .panel-wrap {
+    background: none;
+}
+
+.gestione-utenza {
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding-left: 100px;
+    margin-bottom: 40px;
+}
+
+.card-promo {}
+
+.text-md {
+    font-size: 1.2rem;
+}
+
+.tipologia-utenza {
+    font-size: 1.1rem;
+}
+
+.tipologia-utenza,
+.numero-utenza {
+    color: #000;
+    font-weight: 600;
+}
+
+.card-promo .card-promo-inner,
+.gestione-utenza .gestione-utenza-inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+}
+
+.main-pills-plate::before {
+    border-color: #f6f6f6 #f6f6f6 #ccc #ccc;
+    border-style: solid;
+    border-width: 30px;
+    top: 0px;
+    content: "";
+    display: inline-block;
+    right: -15px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.main-pills-shadow {
+    box-shadow: 0px 0px 10px 0px #ccc;
+    -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+    -moz-box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.price-limit {
+    font-size: 16px;
+    line-height: 26px;
+    vertical-align: bottom;
+    display: table-cell;
+    padding-left: 10px;
+}
+
+.price-strike {
+    text-decoration: line-through;
+}
+
+.panel-link-textvisibile span {
+    text-indent: initial !important;
+    padding: 3px 34px 3px 20px !important;
+    width: auto !important;
+}
+
+.no-gutter {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutter>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+/* vertical steps */
+
+.vertical-steps {
+    counter-reset: v-step-counter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-steps .v-step {
+    counter-increment: v-step-counter;
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.vertical-steps .v-step:before {
+    content: counter(v-step-counter);
+    position: absolute;
+    border-radius: 50% 50%;
+    height: 26px;
+    width: 26px;
+    display: block;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    padding: 2px;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    background-color: #b6b6b6;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.vertical-steps .v-step-completed:before {
+    content: ' ';
+    background-image: url(/risorse_dt/applicazioni/energy/immagini/white-check.png);
+}
+
+.vertical-steps .v-step-completed:before,
+.vertical-steps .v-step-inprogress:before {
+    background-color: #0047bb;
+}
+
+.vertical-steps .v-step.v-step-progress-10:after {
+    background-image: linear-gradient(to bottom, #0047bb 10%, #b6b6b6 10%);
+}
+
+.vertical-steps .v-step.v-step-progress-20:after {
+    background-image: linear-gradient(to bottom, #0047bb 20%, #b6b6b6 20%);
+}
+
+.vertical-steps .v-step.v-step-progress-30:after {
+    background-image: linear-gradient(to bottom, #0047bb 30%, #b6b6b6 30%);
+}
+
+.vertical-steps .v-step.v-step-progress-40:after {
+    background-image: linear-gradient(to bottom, #0047bb 40%, #b6b6b6 40%);
+}
+
+.vertical-steps .v-step.v-step-progress-50:after {
+    background-image: linear-gradient(to bottom, #0047bb 50%, #b6b6b6 50%);
+}
+
+.vertical-steps .v-step.v-step-progress-60:after {
+    background-image: linear-gradient(to bottom, #0047bb 60%, #b6b6b6 60%);
+}
+
+.vertical-steps .v-step.v-step-progress-70:after {
+    background-image: linear-gradient(to bottom, #0047bb 70%, #b6b6b6 70%);
+}
+
+.vertical-steps .v-step.v-step-progress-80:after {
+    background-image: linear-gradient(to bottom, #0047bb 80%, #b6b6b6 80%);
+}
+
+.vertical-steps .v-step.v-step-progress-90:after {
+    background-image: linear-gradient(to bottom, #0047bb 90%, #b6b6b6 90%);
+}
+
+.vertical-steps .v-step-todo:before {}
+
+.vertical-steps .v-step:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 12px;
+    width: 2px;
+    height: calc(100% - 26px);
+    background-color: #0047bb;
+}
+
+.vertical-steps .v-step.v-step-goal:last-child::before {
+    content: ' ';
+    background-image: url(/risorse_dt/applicazioni/energy/immagini/white-star.png);
+}
+
+.vertical-steps .v-step:last-child::after {
+    height: 0;
+    width: 0;
+}
+
+.vertical-steps .v-step.v-step-todo:after {
+    background-color: #b6b6b6;
+}
+
+.price-detail-xs {
+    margin: 0;
+}
+
+.price-detail-xs .price-currency {
+    font-size: 16px;
+    line-height: 26px;
+    vertical-align: bottom;
+}
+
+.price-detail-xs .price-value {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.price-detail-xs .price-subvalue {
+    font-size: 16px;
+    line-height: 26px;
+    vertical-align: bottom;
+}
+
+.panel-detailed-cards .offers-details {
+    display: inline-block;
+    border-top: 1px solid #ececec;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+img.alignment-top-05 {
+    margin-top: -5px;
+}
+
+
+/*xs*/
+
+@media (max-width: 767px) {
+    .panel-detailed-cards .offers-details {
+        display: block;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+    .panel-detailed-cards .advantage-detail,
+    .panel-detailed-cards-bg .advantage-detail {
+        border-top: 1px solid #ececec;
+        border-bottom: none;
+        border-right: none;
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+        min-height: 120px;
+    }
+    .container-preventivo .radio {
+        flex-direction: column;
+    }
+    .container-preventivo .radio .control-label {
+        width: auto;
+        margin: 0 0 5px 0 !important;
+    }
+    .small-xs {
+        font-size: 15px;
+    }
+    .gestione-fornitura:last-child {
+        padding-left: 0;
+        background-image: none;
+    }
+}
+
+
+/*sm*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-preventivo .radio {
+        flex-direction: column;
+    }
+    .container-preventivo .radio .control-label {
+        width: auto;
+        margin: 0 0 5px 0 !important;
+    }
+    .content-application-nav-cruscotto-energy .wrap-application-nav ul.application-nav li {
+        /*margin-right: 0;*/
+    }
+    .gestione-fornitura:last-child {
+        padding-left: 0;
+        background-image: none;
+    }
+}
+
+
+/*md*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .panel-detailed-cards .panel-wrap,
+    .panel-detailed-cards-bg .panel-wrap {
+        padding: 40px 20px 40px 40px;
+    }
+}
+
+
+/*lg*/
+
+@media (min-width: 1200px) {}
+
+
+/* High res Display  */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    /* liste con foglia*/
+    .list-sustainability li {
+        background-image: url(/risorse_dt/applicazioni/energy/immagini/foglia-blu@2x.png);
+    }
+    .list-promo li {
+        background-image: url(/risorse_dt/applicazioni/energy/immagini/ico-promo@2x.png);
+        background-size: 20px;
+    }
+    .vertical-steps .v-step-completed:before {
+        content: ' ';
+        background-image: url(/risorse_dt/applicazioni/energy/immagini/white-check@2x.png);
+        background-size: 50%;
+    }
+    .vertical-steps .v-step.v-step-goal:last-child::before {
+        content: ' ';
+        background-image: url(/risorse_dt/applicazioni/energy/immagini/white-star@2x.png);
+        background-size: 50%;
+    }
+}

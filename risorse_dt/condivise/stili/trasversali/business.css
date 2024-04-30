@@ -1,0 +1,626 @@
+/**************************************************************
+
+    Foglio stile Business - (c) Poste Italiane 2016/2021 - GD//FS//DU
+
+***************************************************************/
+
+.content-federation-bar-minified .header-minified .back a,
+.content-federation-bar-simplified .header-simplified .back a {
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-white/ico-torna-indietro.png");
+}
+
+/***************************/
+
+/******* Header + Navbar + Dropdown *******/
+
+/***************************/
+
+.content-header-business-postlogin,
+.header-dashboard-postlogin .content-federation-bar {
+    background-color: #575757;
+    z-index: 100;
+}
+
+div.header-dashboard-postlogin {
+    line-height: 50px;
+    /*background-color: #575757;*/
+    color: #fff;
+    height: 50px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-color: #FFEC00;
+    border-color: #eedc00;
+    color: #222427;
+}
+
+div.header-dashboard-postlogin .content-federation-bar .federation-bar-wrap ul.dropdown-menu-federation::before,
+div.header-dashboard-postlogin .content-header ul.dropdown-menu-federation::before {
+    right: 7%;
+}
+
+div.header-dashboard-postlogin .content-federation-bar .federation-bar-wrap ul.dropdown-menu-federation,
+div.header-dashboard-postlogin .content-header ul.dropdown-menu-federation {
+    top: 62px;
+    right: -19px;
+}
+
+li.dropdown-user-data {
+    margin: 0 -26px;
+    background: #f6f6f6;
+}
+
+li.dropdown-user-data li,
+.dropdown-dashboard-menu-azienda p {
+    line-height: 35px;
+}
+
+.dropdown-toggle-dashboard-tools-pl span.name-identity {
+    color: #dcdcdc;
+    text-transform: uppercase;
+}
+
+.dropdown-toggle-dashboard-tools-pl span.name-identity:hover,
+.dropdown-toggle-dashboard-tools-pl span.name-identity:focus {
+    color: #fff;
+}
+
+.federation-bar-wrap-right {
+    padding-right: 15px;
+}
+
+.dropdown-dashboard-menu-azienda h6 {
+    margin-bottom: 0;
+}
+
+.dropdown-user-data p,
+.dropdown-dashboard-menu-azienda p {
+    color: #4a4a4a;
+    text-transform: initial;
+}
+
+
+/*before-after logo*/
+
+.header-dashboard-postlogin .federation-bar-content-logo .logo:before,
+.header-dashboard-postlogin .federation-bar-content-logo .logo:after {
+    content: "";
+    background-color: #eedc00;
+    height: 100%;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.federation-bar-content-logo {
+    position: relative;
+}
+
+.header-dashboard-postlogin .federation-bar-content-logo .logo:after {
+    right: -15px;
+}
+
+.header-dashboard-postlogin .federation-bar-content-logo .logo:before {
+    left: -15px;
+}
+
+.header-dashboard-postlogin .federation-bar-content-logo .logo {
+    background-color: #eedc00;
+    height: 50px;
+    line-height: 47px;
+}
+
+.content-logo-bu-psl a {
+    line-height: 50px;
+}
+
+.logo-bu-pstl {
+    height: 36px;
+    margin-top: -8px;
+}
+
+.content-header-dashboard-postlogin {
+    z-index: 3;
+    position: static;
+}
+
+div.headbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.headbar-default {
+    box-shadow: 4px 5px 11px -3px rgba(204, 204, 204, 0.8);
+}
+
+.breadcrumb {
+    padding: 0;
+}
+
+.crumbs {
+    line-height: 30px;
+}
+
+.breadcrumb .first::before {
+    background: none;
+}
+
+.nav-tools {
+    float: right;
+    line-height: 45px;
+    height: 45px;
+}
+
+
+/* dropdown */
+
+.content-header-business-postlogin .btn,
+.content-header-business-postlogin .list-inline {
+    margin: 0;
+}
+
+.content-header-business-postlogin .content-federation-bar .federation-bar-wrap .dropdown-windowbox-target ul.dropdown-menu-federation li a,
+.content-header-business-postlogin .content-federation-bar .federation-bar-wrap .dropdown-windowbox-business ul.dropdown-menu-federation li a,
+.content-header-business-postlogin .content-header .dropdown-windowbox-target ul.dropdown-menu-federation li a {
+    padding: 6px 100px 6px 30px;
+}
+
+.content-header-business-postlogin .content-federation-bar .federation-bar-wrap a.pi-targetarea,
+.content-header a.pi-targetarea {
+    padding: 0;
+    width: 24px;
+    text-align: center;
+    display: inherit;
+}
+
+.dropdown-windowbox-dashboard .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+.dropdown-windowbox-dashboard .dropdown-menu::before {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: -4px -2px 4px rgba(0, 0, 0, 0.09);
+    content: "";
+    display: block;
+    height: 18px;
+    margin: 20px 0 0;
+    position: absolute;
+    right: 20%;
+    top: -29px;
+    transform: rotate(45deg);
+    transition: width 0.5s ease 0s, background-color 0.5s ease 0s;
+    width: 18px;
+}
+
+
+.dropdown-windowbox-dashboard-login a {
+    color: #000;
+}
+
+.dropdown-windowbox-dashboard-login ul.dropdown-menu {
+    min-width: 320px;
+    color: #000;
+}
+
+.dropdown-windowbox-dashboard-login ul.dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-windowbox-dashboard-login ul.dropdown-menu ul.dropdown-dashboard-menu-azienda,
+.dropdown-windowbox-dashboard-login ul.dropdown-menu ul.dropdown-dashboard-menu-navigazione {
+    line-height: 30px;
+    padding: 15px 0;
+}
+
+.dropdown-windowbox-dashboard-login ul.dropdown-menu .dropdown-dashboard-menu-user {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    background-color: #f6f6f6;
+}
+
+.dropdown-windowbox-dashboard-login ul.dropdown-menu .dropdown-user-inc-section ul,
+.dropdown-windowbox-dashboard-login ul.dropdown-menu .dropdown-dashboard-menu-user ul p {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-windowbox-dashboard-login ul.dropdown-menu ul li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+.dropdown-windowbox-dashboard-login .dropdown-menu {
+    padding-bottom: 0;
+}
+
+.dropdown-windowbox-dashboard-login .dropdown-menu::before {
+    right: 5%;
+}
+
+.dropdown-dashboard-menu-user a {
+    color: #333;
+}
+/* gestione heich case overflow tendina */
+.dropdown-scroll {
+    overflow-y: auto;
+    height: 250px;
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-scroll a {
+    font-weight: 600;
+    padding: 3px 20px;
+    text-align: center;
+    display: block;
+    white-space: no-nowrap;
+    clear: both;
+
+}
+
+.dropdown-scroll > li > a {
+    display: block;
+    padding: 3px 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+.dropdown-scroll > li > a:hover,
+.dropdown-scroll > li > a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+/*xs*/
+
+@media (max-width: 767px) {
+    .content-footer-pre .panel-group-accordion .panel-heading .accordion-toggle::after {
+        color: #dcdcdc;
+    }
+    .content-footer-pre {
+        background-color: #575757;
+    }
+    .content-footer-pre,
+    .content-footer-pre a {
+        color: #dcdcdc;
+    }
+    .content-footer-pre h6 {
+        color: #fff;
+    }
+    .content-federation-bar-minified .header-minified .back a, .content-federation-bar-simplified .header-simplified .back a {
+	
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-torna-indietro.png");
+	
+    }
+    
+}
+
+
+/*sm*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-federation-bar-minified .logo,
+    .content-federation-bar-simplified .logo {
+        line-height: inherit;
+    }
+    .content-footer-pre {
+        background-color: #575757;
+    }
+    .content-footer-pre,
+    .content-footer-pre a {
+        color: #dcdcdc;
+    }
+    .content-footer-pre h6 {
+        color: #fff;
+    }
+    .content-federation-bar-minified .header-minified .back a, .content-federation-bar-simplified .header-simplified .back a {
+	
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-torna-indietro.png");
+	
+    }
+}
+
+
+/*md*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .content-federation-bar-minified .federation-bar-content-logo .logo {
+        position: relative;
+    }
+    .content-header #header-poste-italiane .btn-cta-cerca,
+    .content-header #header-poste-italiane .btn-cta-cerca:active,
+    .content-header #header-poste-italiane .btn-cta-cerca:hover {
+        border: none;
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-white/ico-cerca.png");
+        background-color: transparent;
+        padding: 2px 24px;
+    }
+    #header-poste-italiane ul li.pi-servizio-active,
+    #header-poste-italiane ul li.pi-servizio:hover {
+        border-bottom-color: #fff;
+    }
+    .content-federation-bar-minified,
+    .content-federation-bar-simplified {
+        background-color: #575757 !important;
+    }
+    .content-federation-bar-minified .header-minified a.pi-targetarea {
+        color: #dcdcdc;
+    }
+    .content-federation-bar-minified .header-minified .back a,
+    .content-federation-bar-simplified .header-simplified .back a {
+        color: #dcdcdc;
+    }
+    .content-federation-bar-minified .header-minified .back a:hover,
+    .content-federation-bar-simplified .header-simplified .back a:hover {
+        color: #fff !important;
+    }
+    .content-federation-bar-minified .header-minified a.pi-targetarea:hover,
+    .content-federation-bar-minified .header-minified a:focus,
+    .content-federation-bar-simplified .header-simplified a:focus {
+        color: #fff !important;
+    }
+    .content-federation-bar-simplified .header-simplified .back a:hover {
+        color: #fff !important;
+    }
+    /*before-after logo*/
+    .content-federation-bar-minified .federation-bar-content-logo div,
+    .content-federation-bar-simplified .federation-bar-content-logo div {
+        padding: 0;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo {
+        background-color: #eedc00;
+    }
+    .content-footer-pre {
+        background-color: #575757;
+    }
+    .content-footer-pre,
+    .content-footer-pre a {
+        color: #dcdcdc;
+    }
+    .content-footer-pre h6 {
+        color: #fff;
+    }
+    /* default state */
+    .content-header {
+        background-color: #575757;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .content-header #header-poste-italiane {
+        background: none;
+        background-color: #575757;
+    }
+    .content-header #header-poste-italiane .navbar-logo {
+        height: 70px;
+        background-color: #eedc00;
+    }
+    .content-federation-bar-minified .header-minified .back a:hover,
+    .content-federation-bar-simplified .header-simplified .back a:hover {
+        color: #fff !important;
+    }
+    .content-header #header-poste-italiane ul li.pi-servizio a.first-level {
+        color: #fff;
+    }
+    #header-poste-italiane ul li#pi-servizionline.pi-servizio {
+        background-color: #6b6b6b;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo:before,
+    .content-federation-bar-minified .federation-bar-content-logo .logo:after {
+        content: "";
+        background-color: #eedc00;
+        height: 100%;
+        width: 15px;
+        position: absolute;
+        top: 0;
+        display: block;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo:after {
+        right: -15px;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo:before {
+        left: -15px;
+    }
+    /*before-after logo*/
+    .content-header-federation-bar .content-header .navbar-logo {
+        position: relative;
+    }
+    .content-header-federation-bar .content-header .navbar-logo:before,
+    .content-header-federation-bar .content-header .navbar-logo:after {
+        content: "";
+        background-color: #eedc00;
+        height: 100%;
+        width: 15px;
+        position: absolute;
+        top: 0;
+        display: block;
+    }
+    .content-header-federation-bar .content-header .navbar-logo:after {
+        right: -15px;
+    }
+    .content-header-federation-bar .content-header .navbar-logo:before {
+        left: -15px;
+    }
+    .content-federation-bar-minified .federation-bar-wrap a.dropdown-toggle-assistenza,
+    .content-header a.dropdown-toggle-assistenza {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-white/ico-assistenza-domande-frequenti.png);
+    }
+    .content-federation-bar-minified .federation-bar-wrap a.dropdown-toggle-login,
+    .content-header a.dropdown-toggle-login {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-white/ico-area-personale.png);
+    }
+}
+
+
+/*lg*/
+
+@media (min-width: 1200px) {
+    #header-poste-italiane ul li.pi-servizio-active,
+    #header-poste-italiane ul li.pi-servizio:hover {
+        border-bottom-color: #fff;
+    }
+    .content-federation-bar-minified,
+    .content-federation-bar-simplified {
+        background-color: #575757 !important;
+    }
+    .content-federation-bar-minified .header-minified a.pi-targetarea {
+        color: #dcdcdc;
+    }
+    .content-federation-bar-minified .header-minified .back a,
+    .content-federation-bar-simplified .header-simplified .back a {
+        color: #dcdcdc;
+        margin-left: 15px;
+    }
+    .content-federation-bar-minified .header-minified a.pi-targetarea:hover,
+    .content-federation-bar-minified .header-minified a:focus,
+    .content-federation-bar-simplified .header-simplified a:focus {
+        color: #fff !important;
+    }
+    .content-federation-bar-minified .header-minified .back a:hover,
+    .content-federation-bar-simplified .header-simplified .back a:hover {
+        color: #fff !important;
+    }
+    /*before-after logo*/
+    .content-federation-bar-minified .federation-bar-content-logo div,
+    .content-federation-bar-simplified .federation-bar-content-logo div {
+        padding: 0;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo {
+        background-color: #eedc00;
+    }
+    .content-footer-pre {
+        background-color: #575757;
+    }
+    .content-footer-pre,
+    .content-footer-pre a {
+        color: #dcdcdc;
+    }
+    .content-footer-pre h6 {
+        color: #fff;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo {
+        position: relative;
+    }
+    .content-header #header-poste-italiane .btn-cta-cerca,
+    .content-header #header-poste-italiane .btn-cta-cerca:active,
+    .content-header #header-poste-italiane .btn-cta-cerca:hover {
+        border: none;
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-white/ico-cerca.png");
+        background-color: transparent;
+    }
+    /* default state */
+    .content-header {
+        background-color: #575757;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .content-header #header-poste-italiane {
+        background: none;
+        background-color: #575757;
+    }
+    .content-header #header-poste-italiane .navbar-logo {
+        height: 70px;
+        background-color: #eedc00;
+    }
+    .content-header #header-poste-italiane ul li.pi-servizio a.first-level {
+        color: #fff;
+    }
+    #header-poste-italiane ul li#pi-servizionline.pi-servizio {
+        background-color: #6b6b6b;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo:before,
+    .content-federation-bar-minified .federation-bar-content-logo .logo:after {
+        content: "";
+        background-color: #eedc00;
+        height: 100%;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        display: block;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo:after {
+        right: -30px;
+    }
+    .content-federation-bar-minified .federation-bar-content-logo .logo:before {
+        left: -30px;
+    }
+    /*before-after logo*/
+    .content-header-federation-bar .content-header .navbar-logo {
+        position: relative;
+    }
+    .content-header-federation-bar .content-header .navbar-logo:before,
+    .content-header-federation-bar .content-header .navbar-logo:after {
+        content: "";
+        background-color: #eedc00;
+        height: 100%;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        display: block;
+    }
+    .content-header-federation-bar .content-header .navbar-logo:after {
+        right: -30px;
+    }
+    .content-header-federation-bar .content-header .navbar-logo:before {
+        left: -30px;
+    }
+    .content-federation-bar-minified .federation-bar-wrap a.dropdown-toggle-assistenza,
+    .content-header a.dropdown-toggle-assistenza {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-white/ico-assistenza-domande-frequenti.png);
+    }
+    .content-federation-bar-minified .federation-bar-wrap a.dropdown-toggle-login,
+    .content-header a.dropdown-toggle-login {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-white/ico-area-personale.png);
+    }
+}
+
+
+/* High res Display  - Tutti i device retina */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .content-federation-bar-minified .header-minified .back a,
+    .content-federation-bar-simplified .header-simplified .back a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-torna-indietro@2x.png");
+    }
+}
+
+
+/* High res Display  - Tutti i device retina sopra i 992px */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px),
+only screen and (min-resolution: 192dpi) and (min-width: 992px) {
+    /* Barra federata */
+    .content-federation-bar-minified .federation-bar-wrap a.dropdown-toggle-assistenza,
+    .content-header a.dropdown-toggle-assistenza {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-white-2x/ico-assistenza-domande-frequenti@2x.png);
+    }
+    .content-federation-bar-minified .federation-bar-wrap a.dropdown-toggle-login,
+    .content-header a.dropdown-toggle-login {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-white-2x/ico-area-personale@2x.png);
+    }
+    .content-federation-bar-minified .header-minified .back a,
+    .content-federation-bar-simplified .header-simplified .back a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-white-2x/ico-torna-indietro@2x.png");
+    }
+}

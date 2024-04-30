@@ -1,0 +1,279 @@
+/***************************/
+
+/******* Overlaybg text *******/
+
+/***************************/
+
+.myOverlay-bg-pin .myOverlay-bg-container {
+    width: 227px;
+    height: 148px;
+}
+
+.myOverlay-bg-pin .myOverlay-bg-container .obj-pincode {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+    font-size: 44px;
+    font-weight: bolder;
+    color: #ffec00;
+    letter-spacing: 7.5px;
+}
+
+.myOverlay-bg-pin .myOverlay-bg-container .obj-pincode-listen {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 110%;
+    width: 160px;
+}
+
+.panel-cards-basic-bg-minor {
+    background-image: url(/risorse_dt/applicazioni/rpol/immagini/card-basic-minor-bg.png);
+}
+
+.content-abstract-bg-minor {
+    background-image: url(/risorse_dt/applicazioni/rpol/immagini/abstract-minor-bg.png);
+}
+
+
+
+/***************************/
+
+/******* Simulatore Buoni fruttiferi *******/
+
+/***************************/
+
+.main-pills.main-pills-bg-minor {
+    background-image: url(/risorse_dt/applicazioni/rpol/immagini/card-basic-minor-bg.png);
+    background-position: top 15px right 15px;
+    background-repeat: no-repeat;
+}
+
+.drag-area {
+    min-height: 370px;
+}
+
+#simulatore-rpol-bf .slick-dots {
+    top: -45px;
+    bottom: initial;
+}
+
+#simulatore-rpol-bf .slick-dots li button {
+    font-size: 14px;
+    line-height: normal;
+    padding: 0;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #d0d0d0;
+}
+
+#simulatore-rpol-bf .slick-dots li.slick-active button {
+    background-color: #0047bb;
+}
+
+#simulatore-rpol-bf .slick-dots li button::before {
+    display: none;
+}
+
+/***************************/
+
+/******* Buoni & Estrazioni *******/
+
+/***************************/
+
+.panel-medium-bg {
+    background-repeat: no-repeat;
+    padding-top: 120px !important;
+}
+
+.btn-popover {
+    height: 22px;
+    width: 22px;
+    background-image: url(/risorse_dt/condivise/immagini/generiche/informazioni.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 22px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -3px;
+}
+
+.modal-bg-yellow {
+    background-color: #eedc00 !important;
+}
+
+.modal-bg-grey {
+    background-color: #ececec !important
+}
+
+.carousel-f .carousel-text {
+    height: 250px;
+}
+
+.main-pills-bg {
+    padding-right: 200px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.main-pills-bg .main-pills-wrap {
+    padding-top: 20px;
+}
+
+.progress-rpol {
+    height: 28px;
+    line-height: 28px;
+    padding-right: 7px;
+    background-color: #ffec00;
+    border-radius: 5px;
+}
+
+.progress-rpol .description-bar {
+    position: absolute;
+    right: 10px;
+}
+
+.progress-bar-rpol {
+    background-color: #f5f5f5;
+}
+
+.modal-result-rpol.modal-result-ok .value-result {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.main-result-rpol .main-result-wrap .result-heading {
+    background-size: auto;
+    padding: 90px 0 0 0;
+    min-height: 200px;
+}
+
+/*xs*/
+
+@media (max-width: 767px) {
+
+    /*Rpol CSS*/
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+    }
+
+    .content-rpol .balance-rpol .price-detail-sm,
+    .content-rpol .balance-rpol .price-detail-xs {
+        display: table;
+        margin: 0 auto;
+        float: none !important;
+    }
+
+    .myOverlay-bg-pin .myOverlay-bg-container .obj-pincode-listen {
+        position: static;
+        margin: 25px auto;
+    }
+
+    .main-pills.main-pills-bg-minor {
+        background-image: none;
+    }
+}
+
+
+/*sm*/
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+/*md*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #simulatore-rpol-bf .blocktab-container ul li a span.blocktab-maininfo {
+        padding: 14px 15px;
+    }
+}
+
+
+/*lg*/
+
+@media (min-width: 1200px) {}
+
+
+/* Retina mQ */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-paga-online@2x.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-paga-online@2x.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-paga-online@2x.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-paga-online@2x.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-paga-online@2x.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-paga-online@2x.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-paga-online@2x.png);
+    }
+
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-04 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-paga-online@2x.png);
+    }
+}

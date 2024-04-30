@@ -1,0 +1,176 @@
+.sample-result .sample-result-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.sample-result {
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+
+/* Sample 01 (Premarcato) */
+
+.sample-result-01 .sample-result-container {
+    width: 615px;
+}
+
+.sample-result-01 .sr-objsample {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    min-width: 20px;
+    position: absolute;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.sample-result-01 .sr01-conto {
+    top: 40px;
+    left: 180px;
+    width: 180px;
+}
+
+.sample-result-01 .sr01-importo {
+    top: 40px;
+    right: 20px;
+    text-align: right;
+    width: 180px;
+}
+
+.sample-result-01 .sr01-beneficiario {
+    top: 86px;
+    left: 60px;
+    width: 525px;
+    font-weight: 600;
+}
+
+.sample-result-01 .sr01-codeline {
+    bottom: 22px;
+    left: 60px;
+    width: 172px;
+    text-align: center;
+}
+
+.sample-result-01 .sr01-tipologia {
+    bottom: 22px;
+    right: 28px;
+    width: 38px;
+    text-align: center;
+}
+
+.sample-result-01 .sr01-exec-nome {
+    top: 136px;
+    left: 130px;
+    width: 460px;
+}
+
+.sample-result-01 .sr01-exec-indirizzo {
+    top: 170px;
+    left: 130px;
+    width: 216px;
+}
+
+.sample-result-01 .sr01-exec-citta {
+    top: 170px;
+    left: 366px;
+    width: 220px;
+}
+
+.sample-result-01 .sr01-exec-cap {
+    top: 203px;
+    left: 130px;
+    width: 52px;
+}
+
+.sample-result-01 .sr01-exec-provincia {
+    top: 203px;
+    left: 200px;
+    width: 58px;
+}
+
+/* Sample 02 (Bianco) */
+
+.sample-result-02 .sample-result-container {
+    width: 615px;
+}
+
+.sample-result-02 .sr-objsample {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    min-width: 20px;
+    position: absolute;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.sample-result-02 .sr02-conto {
+    top: 40px;
+    left: 180px;
+    width: 180px;
+}
+
+.sample-result-02 .sr02-importo {
+    top: 40px;
+    right: 20px;
+    text-align: right;
+    width: 180px;
+}
+
+.sample-result-02 .sr02-beneficiario {
+    top: 86px;
+    left: 60px;
+    width: 525px;
+    font-weight: 600;
+}
+
+.sample-result-02 .sr02-causale {
+    top: 130px;
+    left: 60px;
+    width: 525px;
+    text-align: left;
+}
+
+.sample-result-02 .sr02-tipologia {
+    bottom: 22px;
+    right: 28px;
+    width: 38px;
+    text-align: center;
+}
+
+.sample-result-02 .sr02-exec-nome {
+    top: 181px;
+    left: 130px;
+    width: 460px;
+}
+
+.sample-result-02 .sr02-exec-indirizzo {
+    top: 215px;
+    left: 130px;
+    width: 216px;
+}
+
+.sample-result-02 .sr02-exec-citta {
+    top: 215px;
+    left: 366px;
+    width: 220px;
+}
+
+.sample-result-02 .sr02-exec-cap {
+    top: 248px;
+    left: 130px;
+    width: 52px;
+}
+
+.sample-result-02 .sr02-exec-provincia {
+    top: 248px;
+    left: 200px;
+    width: 58px;
+}

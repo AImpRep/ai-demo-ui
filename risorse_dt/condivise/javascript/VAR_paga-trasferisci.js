@@ -1,0 +1,67 @@
+var strVar="";
+
+strVar += "                <!-- BISOGNO -->";
+strVar += "                <div class=\"form-group form-group-lg config-row bisogno\">";
+strVar += "                    <span class=\"testo-domanda\">Vorrei<\/span>";
+strVar += "                    <select class=\"form-control\" id=\"bisogno\" data-array=\"0\">";
+strVar += "                        <option disabled selected value><\/option>";
+strVar += "                        <option value=\"pagamento\">effettuare un pagamento<\/option>";
+strVar += "                        <option value=\"trasferimento\">trasferire denaro<\/option>";
+strVar += "                    <\/select>";
+strVar += "                <\/div>";
+strVar += "";
+strVar += "                    <!-- ------------------";
+strVar += "                    ------ PAGAMENTO ------";
+strVar += "                    ------------------- -->";
+strVar += "";
+strVar += "                    <!-- metodo pagamento -->";
+strVar += "                    <div class=\"form-group form-group-lg config-row pagamento metodo_pagamento\">";
+strVar += "                        <span class=\"testo-domanda\">con<\/span>";
+strVar += "                        <select class=\"form-control\" id=\"metodo_pagamento\" data-array=\"1\">";
+strVar += "                            <option disabled selected value><\/option>";
+strVar += "                            <option value=\"conto\">bancoposta<\/option>";
+strVar += "                            <option value=\"carta\">carta di credito<\/option>";
+strVar += "                        <\/select>";
+strVar += "                    <\/div>";
+strVar += "";
+strVar += "                    <!-- ----------------------";
+strVar += "                    ------ TRASFERIMENTO ------";
+strVar += "                    ----------------------- -->";
+strVar += "";
+strVar += "                    <!-- zona -->";
+strVar += "                    <div class=\"form-group form-group-lg config-row trasferimento zona\">";
+strVar += "                        <span class=\"testo-domanda\"><\/span>";
+strVar += "                        <select class=\"form-control\" id=\"zona\" data-array=\"1\">";
+strVar += "                            <option disabled selected value><\/option>";
+strVar += "                            <option value=\"italia\">in Italia<\/option>";
+strVar += "                            <option value=\"estero\">all'estero<\/option>";
+strVar += "                        <\/select>";
+strVar += "                    <\/div>";
+strVar += "";
+strVar += "";
+strVar += "                        <!-- italia online\/offline -->";
+strVar += "                        <div class=\"form-group form-group-lg config-row trasferimento italia\">";
+strVar += "                            <span class=\"testo-domanda\">e pagare<\/span>";
+strVar += "                            <select class=\"form-control\" id=\"italia\" data-array=\"2\">";
+strVar += "                                <option disabled selected value><\/option>";
+strVar += "                                <option value=\"italia_online\">online<\/option>";
+strVar += "                                <option value=\"italia_offline\">offline<\/option>";
+strVar += "                            <\/select>";
+strVar += "                        <\/div>";
+strVar += "";
+strVar += "                        <!-- estero online\/offline -->";
+strVar += "                        <div class=\"form-group form-group-lg config-row trasferimento estero\">";
+strVar += "                            <span class=\"testo-domanda\">e pagare<\/span>";
+strVar += "                            <select class=\"form-control\" id=\"estero\" data-array=\"2\">";
+strVar += "                                <option disabled selected value><\/option>";
+strVar += "                                <option value=\"estero_online\">online<\/option>";
+strVar += "                                <option value=\"estero_offline\">offline<\/option>";
+strVar += "                            <\/select>";
+strVar += "                        <\/div>";
+strVar += "";
+strVar += "";
+
+
+
+
+$('.configuratore-risultato-prodotti').html(strVar);

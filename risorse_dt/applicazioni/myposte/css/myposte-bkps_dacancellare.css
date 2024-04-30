@@ -1,0 +1,590 @@
+/**************************************************************
+
+    Foglio stile My Poste - (c) Poste Italiane 2016/2017/2018 - GD//FS//DU
+
+***************************************************************/
+
+
+/***************************/
+
+
+/******* Generici  *******/
+
+
+/***************************/
+
+.content-myposte {
+    padding: 0;
+}
+
+.myposte-header .main-pills-wrap {
+    padding-bottom: 0;
+}
+
+.myposte-header .main-pills {
+    margin-bottom: 30px;
+}
+
+.myposte-header .welcome {
+    margin-bottom: 40px;
+}
+
+.myposte-header .welcome .abstract h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.myposte-header .welcome .abstract h1 span {
+    display: block;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.myposte-header .welcome .abstract {
+    margin-bottom: 50px;
+}
+
+.myposte-header .welcome .abstract {
+    margin-bottom: 20px;
+}
+
+.myposte-header .welcome .abstract-heading p {
+    color: #787878;
+}
+
+.myposte-header .content-pre-main ul#menu {
+    margin: 0;
+}
+
+.myposte-header .content-pre-main ul#menu li {
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.myposte-header .content-pre-main ul#menu li a {
+    border-bottom: 3px solid transparent;
+    color: #222427;
+    display: block;
+    min-height: 45px;
+    font-weight: bold;
+}
+
+.myposte-header .content-pre-main ul#menu li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #0047bb;
+    color: #0047bb;
+}
+
+.myposte-header .content-pre-main ul#menu li a.active {
+    border-bottom: 3px solid #0047bb;
+    color: #0047bb;
+}
+
+
+/***************************/
+
+
+/******* Modalità Edit  *******/
+
+
+/***************************/
+
+.edit-status {
+    color: #787878;
+}
+
+.last {
+    margin-bottom: 20px;
+}
+
+.myservices-tools a {
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue/ico-modifica-blu.png");
+    background-position: right 0;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    font-size: 16px;
+    padding: 0 25px 0 0;
+}
+
+.myservices-tools a.cancels {
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue/ico-ics-blu.png");
+}
+
+
+/***************************/
+
+
+/******* Form  *******/
+
+
+/***************************/
+
+.myposte-application .main-pills-wrap {
+    padding-top: 30px;
+}
+
+.main-post-login .segments {
+    margin: 0 0 50px 0;
+}
+
+.main-post-login fieldset {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.main-post-login fieldset .content-user-data {
+    margin-bottom: 20px;
+    padding: 0 30px 0 30px;
+}
+
+.main-post-login .form-group h1,
+.main-post-login .form-group h2,
+.main-post-login .form-group h3,
+.main-post-login .form-group h4,
+.main-post-login .form-group h5,
+.main-post-login .form-group h6 {
+    color: #787878;
+}
+
+.main-post-login .form-control-static {
+    font-style: italic;
+}
+
+.content-user-data-edit {
+    border: 1px solid #efefef;
+    background-color: #fbfbfb;
+    padding-top: 25px !important;
+    padding-bottom: 10px !important;
+}
+
+.content-user-data-edit .select-wrapper {
+    background-color: #fbfbfb;
+    color: inherit;
+}
+
+.content-user-data .form-group,
+.content-user-data .form-inline,
+.content-user-data .form-group {
+    margin-bottom: 15px;
+}
+
+.myservices-tools a {
+    font-size: 16px;
+}
+
+.title-favorite {
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 10px;
+}
+
+.title-favorite h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #787878;
+}
+
+.myposte-favorite-to-modifiy fieldset {
+    border-color: #efefef;
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+.myposte-favorite-to-modifiy fieldset h5,
+.myposte-favorite-to-modifiy fieldset h6 {
+    color: #787878;
+    padding-bottom: 5px;
+}
+
+ol.privacy-list {
+    padding: 0;
+}
+
+ol.privacy-list .box-evidence {
+    border: none;
+}
+
+.title-border-top {
+    border-top: 1px solid #ececec;
+}
+
+.myservices-other {
+    height: 46px;
+    line-height: 46px;
+    padding: 0 10px;
+}
+
+.myservices-tools {
+    padding: 10px 0;
+}
+
+.other {
+    padding: 7px 0 10px 0;
+}
+
+.myservices-other a,
+.other a {
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue/ico-freccia-blu.png");
+    background-position: right 0;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    font-size: 16px;
+    padding: 0 25px 0 0;
+}
+
+
+/***************************/
+
+
+/******* Tabelle Filtrate  *******/
+
+
+/***************************/
+
+.table-msg-board thead tr th {
+    background-color: #fff !important;
+    border-top: 1px solid #fff !important;
+    border-left: 1px solid #fff !important;
+    border-right: 1px solid #fff !important;
+}
+
+.table-msg-board thead tr th .checkbox {
+    margin-bottom: auto;
+}
+
+.msg-board-abstract {
+    font-size: 0.8889rem;
+    line-height: 80%;
+}
+
+.msg-board-date {
+    text-align: center;
+    font-size: 16px;
+}
+
+.msg-board-date span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+img.notice-board-order:hover {
+    cursor: pointer
+}
+
+
+/***************************/
+
+
+/******* Bacheca  *******/
+
+
+/***************************/
+
+.content-myposte-notice-board .select-wrapper,
+.content-myposte-notice-board .holder {
+    /*max-width: 150px;*/
+}
+
+.content-myposte-notice-board-message ul.list-attatchments {
+    padding: 0;
+    margin: 0;
+}
+
+.content-myposte-notice-board-message .list-attatchments li {
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-downloadpay.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 24px;
+    list-style: none;
+    padding: 2px 0 8px 35px;
+    margin: 0 0 5px;
+}
+
+.myposte-notice-board-message-dowload-all {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.show-other a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0 25px 0px 0;
+    background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue/ico-piu-blu.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+
+/***************************/
+
+
+/******* Spalla Destra  *******/
+
+
+/***************************/
+
+.panel-message-boards .panel-wrap-pre {
+    background-color: #ececec;
+}
+
+.panel-message-boards .panel-heading .panel-heading-subtitle {
+    color: #222427;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.panel-message-boards {
+    border: 1px solid #ececec;
+    margin-bottom: 0;
+    position: relative;
+    transition: box-shadow 0.5s linear 0s;
+}
+
+.panel-message-boards .panel-body {
+    padding: 0;
+}
+
+.panel-message-boards .panel-body p {
+    color: #787878;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.panel-message-boards .panel-body .from {
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.panel-message-boards .panel-body .message-title {
+    margin-bottom: 3px;
+    font-weight: 600;
+    color: #222427;
+}
+
+.panel-message-boards .new {
+    background-image: url("/risorse_dt/condivise/immagini/icone/ico-pallino-giallo.png");
+    background-position: 4% 28%;
+    background-repeat: no-repeat;
+}
+
+.panel-message-boards .panel-wrap {
+    padding: 20px 30px 20px 30px;
+}
+
+.title-not-found {
+    font-weight: 300 !important;
+    color: #0047bb !important;
+}
+
+
+/*xs*/
+
+@media (max-width: 767px) {
+    .myposte-header .welcome .abstract h1 {
+        font-size: 30px
+    }
+    .myposte-header .welcome .abstract h1 span {
+        display: block;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .main-post-login fieldset .content-user-data {
+        padding: 0;
+    }
+    .main-post-login fieldset .content-user-data-edit {
+        padding: 10px;
+    }
+    ol.privacy-list {
+        padding: 0 0 0 20px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-01 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-cruscotto.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 24px;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-01 a {
+        text-indent: -9999px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-01 a:hover {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-cruscotto.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-01 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-cruscotto.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-02 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-bacheca.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 24px;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-02 a {
+        text-indent: -9999px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-02 a:hover {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-bacheca.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-02 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-bacheca.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-03 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-appuntamenti.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 24px;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-03 a {
+        text-indent: -9999px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-03 a:hover {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-appuntamenti.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-03 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-appuntamenti.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-04 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-impostazioni.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 24px;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-04 a {
+        text-indent: -9999px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-04 a:hover {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-impostazioni.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-04 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-impostazioni.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 25px;
+        height: 25px;
+    }
+    .panel-message-boards .new {
+        background-position: 11px 26px;
+    }
+    table.table-msg-board .msg-board-selection,
+    table.table-msg-board .msg-board-sender {
+        display: none;
+    }
+}
+
+
+/*sm*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .panel-message-boards .new {
+        background-position: 11px 27px;
+    }
+}
+
+
+/* High res Display  */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .myservices-tools a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue-2x/ico-freccia-blu@2x.png");
+    }
+    .myservices-tools a.cancels {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue-2x/ico-ics-blu@2x.png");
+    }
+    .myservices-other a,
+    .other a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue-2x/ico-freccia-blu@2x.png");
+    }
+    .content-myposte-notice-board-message .list-attatchments li {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-downloadpay@2x.png");
+    }
+    .panel-message-boards .new {
+        background-image: url("/risorse_dt/condivise/immagini/icone/ico-pallino-giallo.png");
+    }
+    .show-other a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-tonde-16-blue-2x/ico-piu-blu@2x.png");
+    }
+}
+
+
+/* High res Display and XS */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .myposte-header .content-pre-main ul#menu li.li-list-top-01 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-cruscotto@2x.png");
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-01 a:hover,
+    .myposte-header .content-pre-main ul#menu li.li-list-top-01 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-cruscotto@2x.png");
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-02 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-bacheca@2x.png");
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-02 a:hover,
+    .myposte-header .content-pre-main ul#menu li.li-list-top-02 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-bacheca@2x.png");
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-03 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-appuntamenti@2x.png");
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-03 a:hover,
+    .myposte-header .content-pre-main ul#menu li.li-list-top-03 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-appuntamenti@2x.png");
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-04 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-impostazioni@2x.png");
+    }
+    .myposte-header .content-pre-main ul#menu li.li-list-top-04 a:hover,
+    .myposte-header .content-pre-main ul#menu li.li-list-top-04 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-impostazioni@2x.png");
+    }
+}

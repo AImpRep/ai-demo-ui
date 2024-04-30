@@ -1,0 +1,463 @@
+/*****************************************************
+
+    Foglio stile - (c) Poste Italiane 2016/2021  - Polis -  GD//FS//DU
+
+*****************************************************/
+
+
+
+/* override */
+
+.content {
+    position: relative;
+}
+
+.content-bg-polis-01 {
+    background-color: #F6F6FE;
+}
+
+.content-bg-polis-02 {
+    background-color: #8FDAE0;
+}
+
+.content-bg-polis-03 {
+    background-color: #9CD793;
+}
+
+li.list-color-inclusivo::before {
+    background-color: #F7A60F;
+}
+
+li.list-color-smart::before {
+    background-color: #00A1F2;
+}
+
+li.list-color-verde::before {
+    background-color: #18D371;
+}
+
+.pills-area.enlarge .box-editable-area,
+.main-pills.enlarge .box-editable-area {
+    font-size: 1.2rem;
+}
+
+/* pattern */
+
+.content-bg-pattern-01::before,
+.content-bg-pattern-02::before,
+.content-bg-pattern-03::before {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: " ";
+    top: 0;
+}
+
+.content-bg-pattern-01::before {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/pattern-01.png');
+    background-position: top 30px center;
+}
+
+.content-bg-pattern-02::before {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/pattern-02.png');
+    background-position: top 30px center;
+}
+
+.content-bg-pattern-03::before {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/pattern-oval-top.png');
+    background-position: top;
+    background-size: contain;
+}
+
+.content-bg-pattern-03.content-bg-pattern-inverse::before {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/pattern-oval-bottom.png');
+    background-position: bottom;
+}
+
+
+/* creativity */
+
+.content-bg-creativity {
+    padding-bottom: 180px !important;
+}
+
+.content-bg-creativity .content-wrap::before {
+    background-repeat: no-repeat;
+    background-size: 1140px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: " ";
+    top: 0;
+}
+
+.content-bg-creativity-01 .content-wrap::before {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/creativity-01.png');
+    background-position: bottom -240px center;
+}
+
+.content-bg-creativity-02 .content-wrap::before {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/creativity-02.png');
+    background-position: bottom -240px center;
+}
+
+.content-bg-creativity-03 .content-wrap::before {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/creativity-03.png');
+    background-position: bottom -510px center;
+    background-size: auto;
+}
+
+/**/
+
+.content-menu-iniziative .nav .open>a,
+.content-menu-iniziative .nav .open>a:hover,
+.content-menu-iniziative .nav .open>a:focus {
+    background-color: #eedc00;
+}
+
+.content-menu-iniziative .nav a:hover::after,
+.content-menu-iniziative .nav a:focus::after {
+    background-color: #0047bb;
+}
+
+.content-menu-iniziative .menu-ul li.dropdown .dropdown-menu {
+    margin-top: 10px;
+    right: 0;
+    left: auto;
+}
+
+.content-menu-iniziative {
+    background-color: #eedc00;
+}
+
+.content-menu-iniziative .navbar-logo {
+    width: auto;
+}
+
+.content-menu-iniziative .menu-ul li {
+    margin: 0 14px;
+}
+
+.content-menu-iniziative .menu-ul li a {
+    color: #222427;
+}
+
+.content-menu-iniziative .menu-ul>li:hover::after {
+    background-color: #787878;
+    width: 100%;
+}
+
+.content-menu-iniziative .menu-ul li.active::after {
+    background-color: #0047bb;
+}
+
+.content-menu-iniziative .menu-ul li .dropdown-menu li a {
+    width: 100%;
+    height: 36px;
+    padding: 0 30px;
+}
+
+.content-menu-iniziative .menu-ul li .dropdown-menu li {
+    display: table-row;
+    width: 100%;
+}
+
+.flag-spacer {
+    background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/divisore-bandiera.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.breadcrumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.breadcrumb li a {
+    color: #0047bb;
+}
+
+.container-box-search {
+    top: 0;
+    position: relative;
+    border-color: #4a4a4a;
+}
+
+/* Cards */
+
+.panel-cards-default-icon .panel-heading {
+    background-image: none;
+}
+
+.panel-cards-default-icon .panel-heading .panel-heading-wrap {
+    background-size: 50px;
+}
+
+.panel-cards-default-icon .panel-body {
+    padding-bottom: 15px;
+}
+
+.panel-cards-default-icon.panel-cards-inverse .panel-heading .panel-heading-wrap {
+    background-position: top right;
+}
+
+.panel .panel-tag,
+.panel-cards .panel-tag {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+
+.tag-default {
+    line-height: 24px;
+    padding: 2px 10px;
+    border: 1px solid #eedc00;
+    border-style: groove;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.tag-inclusivo,
+.tag-smart,
+.tag-verde {
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+    background-size: auto 16px;
+    padding-left: 32px;
+}
+
+.tag-inclusivo {
+    border-color: #F7A60F;
+    background-image: url("/risorse_dt/applicazioni/iniziative/polis/immagini/ico-small-inclusivo.png");
+}
+
+.tag-smart {
+    border-color: #00A1F2;
+    background-image: url("/risorse_dt/applicazioni/iniziative/polis/immagini/ico-small-smart.png");
+}
+
+.tag-verde {
+    border-color: #18D371;
+    background-image: url("/risorse_dt/applicazioni/iniziative/polis/immagini/ico-small-verde.png");
+}
+
+
+/* timeline */
+.timeline {
+    background: linear-gradient(#666, #666) no-repeat center/5px 100%;
+}
+
+.timeline::before,
+.timeline::after {
+    content: '';
+    width: 100%;
+    background: repeating-linear-gradient(0deg, #ffffff, #ffffff 5px, #666 5px, #666 15px) no-repeat center/5px;
+    display: block;
+    height: 30px;
+}
+
+.timeline::after {
+    background: repeating-linear-gradient(0deg, #666, #666 10px, #ffffff 5px, #ffffff 15px) no-repeat center/5px;
+}
+
+.tl-element,
+.tl-element>.panel-cards-default {
+    min-height: 161px;
+}
+
+.tl-left {}
+
+.tl-right {}
+
+.tl-left.tl-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tl-right.tl-date {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.tl-date>.tl-date-wrap>h3 {
+    margin: 0;
+    color: #0047bb;
+}
+
+.tl-left.tl-date::after {
+    content: " ";
+    height: 50px;
+    width: 50px;
+    background-color: #0047bb;
+    border-radius: 25px;
+    border: 15px solid #ffffff;
+    display: inline-block;
+    margin-right: -55px;
+}
+
+.tl-right.tl-date::before {
+    content: " ";
+    height: 50px;
+    width: 50px;
+    background-color: #0047bb;
+    border-radius: 25px;
+    border: 15px solid #ffffff;
+    display: inline-block;
+    margin-left: -40px;
+}
+
+
+
+
+
+
+
+/*xs*/
+@media (max-width: 767px) {
+
+    .pills-area.enlarge .box-editable-area,
+    .main-pills.enlarge .box-editable-area {
+        font-size: 1.1rem;
+    }
+
+    .pills-area-wrap, .main-pills.pills-area .pills-area-wrap, .main-pills.pills-area .main-pills-wrap{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* timeline */
+    .timeline {
+        background-position-x: 8px;
+    }
+
+    .timeline::before,
+    .timeline::after {
+        background-position-x: 8px;
+    }
+
+    .tl-left.tl-date {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .tl-left.tl-date::after {
+        display: none;
+    }
+
+    .tl-left.tl-date::before {
+        content: " ";
+        height: 50px;
+        width: 50px;
+        background-color: #0047bb;
+        border-radius: 25px;
+        border: 15px solid #ffffff;
+        display: inline-block;
+    }
+
+    .tl-left.tl-date::before,
+    .tl-right.tl-date::before {
+        margin-left: -14px;
+    }
+
+    .tl-element,
+    .tl-element>.panel-cards-default {
+        min-height: 100px;
+    }
+
+}
+
+
+/*sm*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .pills-area-wrap, .main-pills.pills-area .pills-area-wrap, .main-pills.pills-area .main-pills-wrap{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .panel .panel-tag,
+    .panel-cards .panel-tag {
+        left: 30px;
+    }
+
+    /* timeline */
+    .timeline {
+        background-position-x: 8px;
+    }
+
+    .timeline::before,
+    .timeline::after {
+        background-position-x: 8px;
+    }
+
+    .tl-left.tl-date {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .tl-left.tl-date::after {
+        display: none;
+    }
+
+    .tl-left.tl-date::before {
+        content: " ";
+        height: 50px;
+        width: 50px;
+        background-color: #0047bb;
+        border-radius: 25px;
+        border: 15px solid #ffffff;
+        display: inline-block;
+    }
+
+    .tl-left.tl-date::before,
+    .tl-right.tl-date::before {
+        margin-left: -14px;
+    }
+
+    .tl-element,
+    .tl-element>.panel-cards-default {
+        min-height: 100px;
+    }
+}
+
+
+/*md*/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/*lg*/
+
+@media (min-width: 1200px) {}
+
+
+/* Retina-specific */
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .flag-spacer {
+        background-image: url('/risorse_dt/applicazioni/iniziative/polis/immagini/divisore-bandiera@2x.png');
+        background-size: 50%;
+    }
+
+    .tag-inclusivo {
+        background-image: url("/risorse_dt/applicazioni/iniziative/polis/immagini/ico-small-inclusivo@2x.png");
+    }
+
+    .tag-smart {
+        background-image: url("/risorse_dt/applicazioni/iniziative/polis/immagini/ico-small-smart@2x.png");
+    }
+
+    .tag-verde {
+        background-image: url("/risorse_dt/applicazioni/iniziative/polis/immagini/ico-small-verde@2x.png");
+    }
+}

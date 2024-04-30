@@ -1,0 +1,181 @@
+/*****************************************************
+
+    Foglio stile - (c) Poste Italiane 2016/2017/2018  - MDP -  GD//FS//DU
+
+*****************************************************/
+
+.note-soft {
+    color: #787878;
+}
+
+
+/* spalla */
+
+img.howto-pay {
+    max-height: 38px;
+}
+
+
+/* area Bollettini*/
+
+
+/* #########  submenu applicazione verticale  ######### */
+
+.slick-prev,
+.slick-next {
+    transform: translate(0px, -110%);
+}
+
+.submenu-vert-nav .submenu-vert-nav-inner {
+    padding: 2px 0 0 0;
+    text-transform: uppercase;
+}
+
+.submenu-vert-nav .submenu-vert-nav-inner {
+    padding: 2px 0 0 0;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller-wrap {
+    padding: 0 30px;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller {
+    position: relative;
+    height: 80px;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller img {
+    width: 32px;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller .slick-slide {
+    vertical-align: middle;
+    outline: none;
+    margin-right: 35px;
+    height: 80px;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller .slick-slide a {
+    color: #787878;
+    line-height: 20px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #ececec;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller .slick-slide a:hover {
+    color: #0047bb;
+    text-decoration: none;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller .slick-slide.active-element {
+    position: relative;
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller .slick-slide.active-element::before {
+    border-left: 17px solid transparent;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid #ececec;
+    border-right: 17px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.submenu-vert-nav .submenu-vert-nav-scroller .slick-slide.active-element a {
+    color: #0047bb;
+    border-color: #0047bb;
+}
+
+.submenu-need .submenu-need-scroller .scroller-need-item a {
+    background-position: left 1px center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    padding-left: 46px;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    /* area Bollettini*/
+    .main-pills .main-pills-wrap .box-evidence.onlayer-grey {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px;
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+    }
+    .box-sheet::before {
+        border-width: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
+
+
+/* Retina mQ */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-paga-online@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-paga-online@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-paga-online@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-paga-online@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-paga-online@2x.png);
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a:focus,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-03 a.active {
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-paga-online@2x.png);
+    }
+}

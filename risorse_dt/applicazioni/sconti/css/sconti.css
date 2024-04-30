@@ -1,0 +1,19 @@
+.column-overflow,
+.content-map{
+   height: 500px;
+}
+
+.content-map{
+   border: 1px solid #fafafa;
+   background-image: url("/risorse_dt/applicazioni/sconti/immagini/mappa-offline.jpg");
+   background-position: bottom right;
+   background-repeat: no-repeat;
+}
+
+
+@media (max-width: 767px) {
+   .column-overflow,
+   .content-map{
+      height: 420px;
+   }
+}

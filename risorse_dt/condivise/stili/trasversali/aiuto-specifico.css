@@ -1,0 +1,204 @@
+.configuratore .config-container {
+    overflow: hidden;
+}
+
+.configuratore .config-container {
+    padding: 20px;
+    height: auto;
+    min-height: 200px;
+}
+
+.configuratore h2 {
+    margin-top: 30px;
+}
+
+.config-container {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+    height: 450px;
+}
+
+.config-container-wrap {
+    overflow: auto;
+}
+
+.config-container .config-row {
+    display: none;
+    font-size: 28px;
+    font-weight: 300;
+    color: #fff;
+    width: 100%;
+}
+
+.config-container .config-row .testo-domanda {
+    color: black;
+    font-size: 28px;
+    margin-top: -10px;
+}
+
+.config-container .config-row .select-wrapper span {
+    color: black;
+    font-size: 28px;
+    padding-right: 3px;
+}
+
+.prodotti .configtag {
+    display: none;
+}
+
+.assistenza-numeri {
+    margin: 20px auto;
+}
+
+span.numero_sezione {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 28px;
+}
+
+.assistenza-numeri .numero {
+    overflow: hidden;
+}
+
+.assistenza-numeri .numero .content {
+    display: inline-block;
+    float: left;
+    height: 40px;
+    overflow: hidden;
+    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-chiamaci.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 30px;
+}
+
+.assistenza-numeri .numero .content a {
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    font-size: 28px;
+}
+
+.assistenza-numeri .numero span {
+    display: inline-block;
+    float: left;
+    /*height: 40px;*/
+    /*line-height: 45px;*/
+    margin-left: 10px;
+    margin-top: 14px;
+    font-size: 16px;
+}
+
+/* spinner */
+
+.prodotti .over {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #f6f6f6;
+}
+
+.prodotti .over img {
+    position: relative;
+    margin-top: 35px !important;
+    display: none;
+    margin: 0 auto;
+    width: 30px;
+}
+
+.config-container .select-wrapper {
+    min-width: 120px;
+}
+
+.config-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.config-container .form-group {
+    margin-bottom: 10px;
+}
+
+.config-container span.select-wrapper {
+    vertical-align: bottom;
+    display: inline-block;
+    width: auto;
+    /* truncate overflow text */
+    /*
+    overflow: hidden;
+    text-overflow: ellipsis;
+    */
+}
+
+.config-container .select-wrapper {
+    background-position: 99% 88%;
+}
+
+.numero_contact_center {
+    display: block;
+    font-size: 34px;
+    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-chiamaci.png);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: center left;
+    padding-left: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 240px) and (max-width: 767px) {
+
+    .assistenza-numeri_mobile .numero_mobile {
+        overflow: hidden;
+        margin: 8px auto;
+    }
+
+    .assistenza-numeri_mobile .numero_mobile .content {
+        float: left;
+        height: 28px;
+        overflow: hidden;
+        background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-chiamaci.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center left;
+        padding-left: 26px;
+    }
+
+    .assistenza-numeri_mobile .numero_mobile span {
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+        line-height: 18px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .assistenza-numeri_mobile .numero_mobile .content a {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+    }
+    .config-container-wrap.mobile {
+        overflow: auto;
+    }
+
+    a.mail {
+        font-size: 16px !important;
+        line-height: 25px !important;
+    }
+
+}

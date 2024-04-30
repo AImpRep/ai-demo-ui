@@ -1,0 +1,285 @@
+/* il tuo Patrimonio */
+
+.category-bullet::before {
+	display: block;
+	float: left;
+    content: '';
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    height: 16px;
+    width: 21px;
+    margin-right: 30px;
+    margin-top: 2px;
+    background-color: #eedc00;
+}
+
+.category-bullet.two::before {
+    background-color: #A6BFE7;
+}
+
+.panel-pills .panel-body {
+	border-top: none !important;
+    background-color: #f9f9f9;
+}
+
+.panel-pills .panel-body.not-active {
+	background-color: #ececec;
+}
+
+hr.hr-dark-grey {
+    border-top: 1px solid #d0d0d0;
+}
+
+.main-result-no-products .main-result-wrap .result-heading {
+    background-image: url(/risorse_dt/applicazioni/wealth-management/immagini/cassaforte@2x.png);
+    background-size: 162px;
+    min-height: 220px;
+}
+
+.panel .panel-heading.last-element {
+	border-bottom: none !important;
+}
+
+
+/* private */
+
+.scheda-patrimonio-liquidita > div > div:first-of-type p {
+	color: #787878;
+}
+
+.scheda-patrimonio-liquidita div:last-of-type p {
+	display: inline-block;
+}
+
+.scheda-patrimonio-liquidita > div > div.center p:last-of-type {
+	color: #787878;
+}
+
+.scheda-patrimonio-liquidita span.value {
+	display: block;
+	position: absolute;
+	left: 55px;
+	top: 8px;
+    content: '';
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    height: 14px;
+
+}
+
+.scheda-patrimonio-liquidita span.value.blue {
+	background-color: #0047bb;
+}
+
+.scheda-patrimonio-liquidita span.value.yellow {
+	background-color: #eedc00;
+}
+
+/*.scheda-patrimonio-liquidita .value::after {
+	display: block;
+	position: absolute;
+	left: 55px;
+	top: 8px;
+    content: '';
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    height: 14px;
+}
+
+.scheda-patrimonio-liquidita .value.blue::after {
+	background-color: #0047bb;
+	width: 12%;
+}
+
+.scheda-patrimonio-liquidita .value.yellow::after {
+	background-color: #eedc00;
+	width: 32%;
+}*/
+
+.scheda-patrimonio-liquidita .panel-pills, .scheda-patrimonio-carte .panel-pills {
+    border: none;
+}
+
+.scheda-patrimonio-liquidita .panel-pills .panel-heading, .scheda-patrimonio-carte .panel-pills .panel-heading {
+    padding: 12px 20px 12px 20px;
+}
+
+.scheda-patrimonio-liquidita .table-like {
+	height: 32px;
+}
+
+.scheda-patrimonio-carte .small {
+	font-size: 14px;
+}
+
+.scheda-patrimonio-carte .table-like {
+	height: 40px;
+}
+
+
+/* profilo finanziario */
+
+.main-result-no-products.profilo-finanziario .main-result-wrap .result-heading {
+    background-image: url(/risorse_dt/applicazioni/wealth-management/immagini/No_Promemoria@2x.png);
+    background-size: 162px;
+    min-height: 220px;
+}
+
+
+/* pre - login */
+
+.nobracket #prod-desc.main-pills .main-pills-wrap .scroll-content {
+    overflow-y: auto;
+    height: 485px;
+}
+
+.nobracket #prod-desc.main-pills .main-pills-wrap .row > div:first-of-type {
+	padding: 40px 10px 40px 60px;
+}
+
+.scheda-calcolo-costi .table-like {
+	height: 40px;
+}
+
+
+/* modifica linea investimento */
+
+.scheda-modifica-linea-investimenti .panel-pills  {
+    border: none;
+}
+
+.scheda-modifica-linea-investimenti .panel-pills .panel-heading {
+    padding: 15px;
+}
+
+.scheda-modifica-linea-investimenti .pills-wrap-accordion {
+    padding-right: 30px;
+}
+
+.scheda-modifica-linea-investimenti .table-like .tablecell-like {
+    height: 52px;
+}
+
+.scheda-modifica-linea-investimenti .category-bullet::before {
+    margin-right: 15px;
+}
+
+
+
+/* sottoscrizione */
+
+.valutazione-mifid .ambito {
+	font-size: 16px;
+	text-align: center;
+	display: block;
+}
+
+.valutazione-mifid .voto {
+	text-align: center;
+	font-size: 42px;
+	color: #0047bb;
+	display: block;
+}
+
+.valutazione-mifid .bullet-container {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.valutazione-mifid .bullet-container span:last-of-type {
+	margin-right: 0px !important;
+}
+
+.valutazione-mifid .bullet {
+	float: left;
+	margin-right: 5px;
+	background-color: #0047bb;
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+
+.valutazione-mifid .bullet.empty {
+	background-color: white;
+	border: 1px solid #0047bb;
+}
+
+.slider-questionario .tablecell-like {
+	height: 65px;
+}
+
+.slider-questionario .irs {
+	margin: 0;
+}
+
+
+
+
+
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.nobracket #prod-desc.main-pills .main-pills-wrap .scroll-content {
+	    overflow-y: auto;
+	    height: 405px;
+	}
+
+}
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.nobracket #prod-desc.main-pills .main-pills-wrap .row > div:first-of-type {
+		padding: 20px;
+	}
+
+}
+
+
+
+/* xs */
+@media (max-width:767px) {
+
+	.nobracket #prod-desc.main-pills .main-pills-wrap .row > div:first-of-type {
+		padding: 20px;
+	}
+
+	.scheda-patrimonio-liquidita .value::after {
+	    display: none;
+	}
+
+	.scheda-patrimonio-liquidita .h4 {
+		font-size: 28px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+
+	.scheda-patrimonio-carte .small {
+		clear: both;
+		width: 100%;
+	}
+	.scheda-modifica-linea-investimenti .table-like .tablecell-like {
+	    height: 30px;
+	}
+	
+
+	.wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+	    background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-paga-online.png);
+	}
+	.wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover, .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:focus, .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+    	background-image: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-paga-online.png);
+	}
+
+
+}
+
+
+
+
+
+
+
+

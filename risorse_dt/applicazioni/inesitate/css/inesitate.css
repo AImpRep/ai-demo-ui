@@ -1,0 +1,59 @@
+/**************************************************************
+
+    Foglio stile Inesitate - (c) Poste Italiane 2016/2017/2018 - GD//FS//DU
+
+***************************************************************/
+
+.panel-dashboard-type-03 .btn-panel {
+    background-image: url(/risorse_dt/condivise/immagini/generiche/ico-arrow-grey-right.png);
+    background-position: right 3px center;
+    background-repeat: no-repeat;
+    background-size: 9px 14px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.panel-dashboard-type-03 .btn:active {
+    box-shadow: none !important;
+}
+
+
+/*xs*/
+
+@media (max-width: 767px) {
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-creare-pensione.png");
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-creare-pensione.png");
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on/ico-documenti.png");
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-documenti.png");
+    }
+}
+
+
+/* High res Display and XS */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-@2x.png");
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-01 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-@2x.png");
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-@2x.png");
+    }
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a:hover,
+    .wrap-application-nav ul.application-nav li.ico-specific-element-02 a.active {
+        background-image: url("/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-@2x.png");
+    }
+}

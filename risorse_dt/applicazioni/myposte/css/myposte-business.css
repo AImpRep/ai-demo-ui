@@ -1,0 +1,36 @@
+/**************************************************************
+
+    Foglio stile My Poste business - (c) Poste Italiane 2017 - GD//FS//DU
+    [release v 1.8]
+
+***************************************************************/
+
+.myposte-header.myposte-business-header .welcome .abstract h1{
+    font-size: 18px;
+}
+
+.content-myposte-business .panel-tools{
+    border-top: 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.content-myposte-business .content-user-data{
+    border: 0;
+}
+
+.favourite-inc{
+    color: #0047bb;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+.favourite-inc:hover{
+    cursor: pointer;
+}
+
+.content-myposte-business .panel-cards.panel-cards-edit-mode{
+    background-image: url("/risorse_dt/condivise/immagini/icone/ico-editmode.png");
+    background-position: right 0 top 5px;
+    background-repeat: no-repeat;
+}

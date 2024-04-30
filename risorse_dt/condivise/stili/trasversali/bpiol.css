@@ -1,0 +1,579 @@
+/*****************************************************
+
+    Foglio stile - (c) Poste Italiane 2016/2021  -  GD//FS//DU
+
+*****************************************************/
+
+/***************************/
+
+/******* Left Sidebar *******/
+
+/***************************/
+
+body.headbar-fixed {
+    padding-top: 40px;
+}
+
+body.headbar-fixed .headbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    transition: all 0.2s linear 0s;
+}
+
+.left-sidebar-wrapper {
+    transition: width 0.3s;
+}
+
+#left-sidebar {
+    background: #fff none repeat scroll 0 0;
+    height: 100%;
+    left: 200px;
+    margin: 0 0 0 -200px;
+    overflow: hidden;
+    position: absolute;
+    transition: width 0.5s;
+    width: 50px;
+    top: 95px;
+    z-index: 3;
+    box-shadow: 2px 5px 10px 1px rgba(204, 204, 204, 0.8);
+}
+
+body.headbar-fixed #left-sidebar {
+    position: fixed;
+    top: 43px;
+}
+
+#left-sidebar .navigation-sidebar {
+    width: 250px;
+    margin-bottom: 0;
+}
+
+#left-sidebar.active .navigation-sidebar {
+    margin-left: 0px;
+}
+
+#left-sidebar .navigation-sidebar {
+    padding-left: 0;
+    width: 50px;
+}
+
+/* left sidebar menu */
+
+.left-sidebar-toggle {
+    width: 250px;
+    transition: width 0.2s linear;
+    position: relative;
+}
+
+.navigation-sidebar li.left-sidebar-toggle a {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-freccia-dx.png) 220px no-repeat;
+    background-size: 22px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.left-sidebar-toggle a:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-freccia-dx.png) 220px no-repeat;
+    background-size: 22px
+}
+
+.navigation-sidebar li.left-sidebar-toggle a.no-arrow {
+    background: none;
+}
+
+.navigation-sidebar li.left-sidebar-toggle a.no-arrow:hover {
+    background: none;
+}
+
+.navigation-sidebar li.left-sidebar-toggled-item a {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-freccia-down.png) 220px no-repeat;
+    background-size: 22px;
+}
+
+.navigation-sidebar li.left-sidebar-toggled-item a:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-freccia-down.png) 220px no-repeat;
+    background-size: 22px;
+}
+
+.navigation-sidebar li.left-sidebar-toggled-item ul li a {
+    background: inherit;
+    font-weight: normal;
+}
+
+.navigation-sidebar li.left-sidebar-toggled-item ul li a:hover {
+    background: inherit;
+}
+
+.navigation-sidebar li.left-sidebar-toggled-item ul li a {
+    height: auto;
+    padding: 7px 0;
+}
+
+.left-sidebar-toggle a {
+    color: #6d6e6f;
+    height: 50px;
+    display: block;
+}
+
+li.left-sidebar-item-selected a,
+.left-sidebar-toggle a:hover {
+    color: #0047bb;
+}
+
+.left-sidebar-toggle::after {
+    background-color: #ececec;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 190px;
+}
+
+.active .left-sidebar-toggle::after {
+    opacity: 1;
+}
+
+.left-sidebar-toggle-btn {
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    color: #6d6e6f;
+    border-left: 3px solid #fff;
+    line-height: normal;
+    vertical-align: middle;
+    display: none;
+}
+
+.left-sidebar-toggle ul {
+    /*transition: all 0.5s ease 0s;*/
+    height: 0;
+    display: none;
+}
+
+.left-sidebar-wrapper {
+    transition: padding 0.5s;
+}
+
+.left-sidebar-wrapper.active .left-sidebar-toggle.left-sidebar-toggled-item ul {
+    height: auto;
+    width: auto;
+    left: auto;
+    list-style: none;
+    list-style-position: inside;
+    padding: 20px 0 20px 75px;
+    display: block;
+    /*overflow: hidden;*/
+}
+
+.left-sidebar-toggled-item a {
+    border-left: 3px solid #0047bb;
+}
+
+.left-sidebar-toggled-item ul li a {
+    border: none;
+}
+
+.left-sidebar-toggled-item .left-sidebar-toggle-label {
+    color: #0047bb;
+}
+
+#left-sidebar .left-sidebar-toggle-label {
+    transition: all 0.2s ease 0s;
+    padding-left: 5px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+#left-sidebar .left-sidebar-toggle-label {
+    margin-left: 60px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.left-sidebar-wrapper .content-sidebar {
+    display: none;
+}
+
+.left-sidebar-on .left-sidebar-wrapper .content-sidebar {
+    display: block;
+}
+
+.left-sidebar-on .left-sidebar-wrapper {
+    padding-left: 50px;
+    margin-bottom: 70px;
+}
+
+.left-sidebar-wrapper .left-sidebar-toggle-clk {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    float: right;
+    transform: rotate(0deg);
+    transition: all 0.7s ease 0s;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.left-sidebar-wrapper .left-sidebar-toggle-clk:hover {
+    color: #0047bb;
+}
+
+.left-sidebar-wrapper.active .left-sidebar-toggle-clk {
+    transform: rotate(180deg);
+}
+
+.left-sidebar-wrapper.active #left-sidebar {
+    width: 350px;
+}
+
+.navigation-sidebar li.nav-ico-home {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-home.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-home.left-sidebar-toggled-item,
+.navigation-sidebar li.nav-ico-home:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-home.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-monitoring {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-monitoraggio.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-monitoring.left-sidebar-toggled-item,
+.navigation-sidebar li.nav-ico-monitoring:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-monitoraggio.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-performance {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-performance.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-performance.left-sidebar-toggled-item,
+.navigation-sidebar li.nav-ico-performance:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-performance.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-reporting {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-reportistica.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-reporting.left-sidebar-toggled-item,
+.navigation-sidebar li.nav-ico-reporting:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-reportistica.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-documents {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-rendicontazione.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-documents.left-sidebar-toggled-item,
+.navigation-sidebar li.nav-ico-documents:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-rendicontazione.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-archive {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-on/ico-archivio.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+.navigation-sidebar li.nav-ico-archive.left-sidebar-toggled-item,
+.navigation-sidebar li.nav-ico-archive:hover {
+    background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue/ico-archivio.png) no-repeat 15px 10px;
+    background-size: 26px;
+    font-weight: 600;
+}
+
+/* remote control user assistance */
+
+.active #left-sidebar .content-remote-control {
+    display: block !important;
+    /*margin-top: -10px;*/
+    margin-top: 20px;
+}
+
+.left-sidebar-wrapper #left-sidebar .content-remote-control {
+    display: none;
+}
+
+#left-sidebar .content-remote-control {
+    padding: 20px;
+    border-top: 1px solid #ececec;
+}
+
+#left-sidebar .content-remote-control span {
+    display: block;
+}
+
+.result-username,
+.result-usercode {
+    color: #000;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.logout-remote-control {
+    background-color: #f6f6f6;
+    font-size: 15px;
+    margin: 20px -20px 0 -20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.logout-remote-control a {
+    color: #787878
+}
+
+.logout-remote-control a:hover {
+    color: #0047bb
+}
+
+.logout-remote-control img {
+    width: 24px;
+}
+
+.usercode-remote-control {
+    margin-bottom: 20px;
+}
+
+.content-remote-control .label-like {
+    color: #6d6e6f;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* francesco
+
+#left-sidebar.left-sidebar-bpiol .panel-default > .panel-heading {
+    border-bottom: 1px solid #ececec;
+    background: none;
+}
+
+#left-sidebar.left-sidebar-bpiol .panel-default > .panel-heading:last-child {
+    border: none;
+}
+
+#left-sidebar.left-sidebar-bpiol .panel-default {
+    border: 0;
+}
+
+.panel h4 {
+    text-transform: uppercase;
+}
+
+.panel-collapse {
+    border-bottom: 1px solid #ececec;
+    background-color: #f5f5f5
+}
+
+.panel a {
+    display: block
+}
+
+.panel span a {
+    margin-left: 60px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.accordion-third h4 {
+    padding-left: 30px
+}
+.accordion-four h4 {
+    padding-left: 50px
+}
+.panel-collapse .panel {
+    border-bottom: 1px solid #ececec;
+    background-color: #f5f5f5
+}
+
+.panel-collapse .panel:last-child,
+.panel-collapse:first-child,
+.panel-default .panel-heading:last-child {
+    border: none;
+}
+
+.panel-collapse .panel-body {
+    padding: 0;
+}
+
+.panel-collapse .panel-group {
+    margin: 0;
+}
+
+//.left-sidebar-toggle::after {
+//    background-color: #ececec;
+//    bottom: 0;
+//    content: "";
+//    display: block;
+//    height: 1px;
+//    opacity: 0;
+//    position: absolute;
+//    right: 0;
+//    width: 100%;
+//}
+
+#left-sidebar.left-sidebar-bpiol .panel-group .panel + .panel {
+    margin: 0;
+}
+
+*/
+
+/* xs */
+
+@media (max-width:767px) {
+    .cover {
+        z-index: 9;
+        background-color: #eedc00;
+    }
+
+    .content,
+    .left-sidebar-wrapper {
+        display: none;
+    }
+}
+
+/* sm */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #left-sidebar {
+        top: 93px;
+    }
+}
+
+/* md */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #left-sidebar {
+        top: 93px;
+    }
+}
+
+/* lg */
+
+@media (min-width: 1200px) {
+    #left-sidebar {
+        top: 93px;
+    }
+}
+
+/* xl */
+
+/*
+@media (min-width: 1888px) {
+
+    .left-sidebar-on .left-sidebar-wrapper.active {
+        padding-left: 250px;
+    }
+}
+*/
+
+/* High res Display  - Tutti i device retina sopra i 992px */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .navigation-sidebar li.nav-ico-home {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-home@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.nav-ico-home.left-sidebar-toggled-item,
+    .navigation-sidebar li.nav-ico-home:hover {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-home@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.nav-ico-monitoring {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-monitoraggio@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.nav-ico-monitoring.left-sidebar-toggled-item,
+    .navigation-sidebar li.nav-ico-monitoring:hover {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-monitoraggio@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.nav-ico-performance {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-performance@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+        font-weight: 600;
+    }
+
+    .navigation-sidebar li.nav-ico-performance.left-sidebar-toggled-item,
+    .navigation-sidebar li.nav-ico-performance:hover {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-performance@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+        font-weight: 600;
+    }
+
+    .navigation-sidebar li.nav-ico-reporting {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-reportistica@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.nav-ico-reporting.left-sidebar-toggled-item,
+    .navigation-sidebar li.nav-ico-reporting:hover {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-reportistica@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.nav-ico-documents {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-documenti@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.nav-ico-documents.left-sidebar-toggled-item,
+    .navigation-sidebar li.nav-ico-documents:hover {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-rendicontazione@2x.png) no-repeat 15px 10px;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.left-sidebar-toggle a,
+    .navigation-sidebar li.left-sidebar-toggle a:hover {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-on-2x/ico-freccia-dx@2x.png) 220px no-repeat;
+        background-size: 26px;
+    }
+
+    .navigation-sidebar li.left-sidebar-toggled-item a,
+    .navigation-sidebar li.left-sidebar-toggled-item a:hover {
+        background: url(/risorse_dt/condivise/immagini/icone/icone-default-blue-2x/ico-freccia-down@2x.png) 220px no-repeat;
+        background-size: 26px;
+    }
+
+    .th-on {
+        background-image: url("/risorse_dt/condivise/immagini/generiche-2x/ico-arrow-grey-up@2x.png");
+    }
+
+    .th-off {
+        background-image: url("/risorse_dt/condivise/immagini/generiche-2x/ico-arrow-grey-down@2x.png");
+    }
+}
