@@ -27,6 +27,8 @@ let current_chat_id = 0;
 let mediaRecorder;
 let chunks = [];
 let rec = false;
+//let chat = localStorage.getItem("chatInCorso") === null ? [] : localStorage.getItem("chatInCorso");
+//localStorage.setItem("chatInCorso", chat) 
 
 // ------------------------------------------------------------------------- //
 // AI HELPER LOGIC
@@ -227,12 +229,9 @@ function sendMessage(e, content) {
     $("#AIhelperChat-input").val("");
 
     //messaggio in attesa della risposta
-    setTimeout(() => {
-      add_message_to_chat("Sto elaborando una risposta...", "ia");
-    }, 300);
+    add_message_to_chat("Sto elaborando una risposta...", "ia");
    
     // send to BE
-    //toggle_thinking_message();
     //disabilito la sezione di invio
     disabledSectionInput(true);
 
@@ -248,7 +247,13 @@ function sendMessage(e, content) {
         if (res.response) {
           //chats[current_chat_id].thread_id = res.threadId;
           var redirect = `https://buonielibretti.poste.it/risparmiare-con-i-buoni.html?sab=${res.response}#valore`;
-          window.open(redirect, "_blank");
+          
+          add_message_to_chat("Tra qualche istante verrai reindirizzato sulla pagina con i risultati! ", "ia");
+
+          setTimeout(() => {
+            window.open(redirect, "_blank");
+          }, 3000);
+          
           disabledSectionInput(false);
           //add_message_to_chat(res.response);
         } else {
@@ -747,7 +752,8 @@ function add_AI_helper_UI_help_chat() {
   })
     .on("keyup", function (e) {
       if (e.key === "Enter" || e.keyCode === 13) {
-        help(e, $(this).val());
+        //help(e, $(this).val());
+        sendMessage(e, $("#AIhelperChat-input").val());
       }
     })
     .appendTo(input);
@@ -770,7 +776,7 @@ function add_AI_helper_UI_help_chat() {
     );
 
   // audio button
-  $("<button></button>", {
+  /*$("<button></button>", {
     class:
       "btn btn-primary btn-cta spacer-xs-bottom-0",
     type: "submit",
@@ -788,7 +794,7 @@ function add_AI_helper_UI_help_chat() {
       $("<div></div>", {
         class: "input-group-btn",
       }).appendTo(input)
-    );    
+    ); */
 
   // loading area
   $("<img></img>", {
@@ -814,6 +820,7 @@ function add_message_to_chat(text, type) {
       chats[current_chat_id] = { chat: [], thread_id: null };
     }
     chats[current_chat_id].chat.push({ text, type });
+    //localStorage.setItem("chatInCorso", chats);
     refresh_chat();
   }
 }
@@ -868,7 +875,8 @@ function toggle_helper(e) {
 function toggle_chat(e) {
   stop_event_propagation(e);
   if(chats.length === 0){
-    add_message_to_chat("Ciao, come posso aiutarti?", 'ia')
+
+    add_message_to_chat("Ciao, come posso aiutarti?", 'ia');
     //chats[current_chat_id] = { chat: [], thread_id: null };
     //chats[current_chat_id].chat.push({ text: "Ciao, come posso aiutarti?", type:'ia' });
     //refresh_chat();
