@@ -12,7 +12,7 @@ const ENDPOINT = {
 };
 
 // CSS URI
-const css_uri = "/portaleAcquiring/poc.css";
+const css_uri = "./poc.css";
 
 // minimum image size
 const image_size = 60;
@@ -573,8 +573,8 @@ function add_AI_helper_UI_buttons() {
 function add_AI_helper_UI_describe_button(element) {
   element.parent().css("position", "relative");
   $("<img></img>", {
-    src: "/risorse_dt/condivise/immagini/generiche/informazioni.png",
-    srcset: "/risorse_dt/condivise/immagini/generiche/informazioni@2x.png 2x",
+    src: "./risorse_dt/condivise/immagini/generiche/informazioni.png",
+    srcset: "./risorse_dt/condivise/immagini/generiche/informazioni@2x.png 2x",
     alt: "maggiori info disponibili",
   }).appendTo(
     $("<a>", {
@@ -792,7 +792,7 @@ function add_AI_helper_UI_help_chat() {
 
   // loading area
   $("<img></img>", {
-    src: "/risorse_dt/condivise/immagini/generiche/spinner_grigio.gif",
+    src: "./risorse_dt/condivise/immagini/generiche/spinner_grigio.gif",
   }).prependTo(
     $("<div></div>", {
       id: "AIhelperChat-thinking",
